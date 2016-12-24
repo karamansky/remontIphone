@@ -224,6 +224,8 @@ section {
   margin-top: -68px;
   position: relative;
   z-index: 1; }
+  .slider .owl-item {
+    height: 630px !important; }
   .slider .slider__text h2 {
     color: #fff;
     font-family: "Roboto-Thin", sans-serif;
@@ -240,10 +242,10 @@ section {
     font-size: 24px; }
   .slider .slider__text a {
     display: block;
-    width: 375px;
+    width: 350px;
     border: 1px solid #fff;
-    padding: 7px 30px 5px 30px;
-    font-size: 30px;
+    padding: 7px 25px 5px 25px;
+    font-size: 28px;
     font-family: "Roboto-Thin", sans-serif;
     text-align: center;
     text-transform: uppercase;
@@ -256,26 +258,31 @@ section {
     .slider .slider__text a:hover {
       background: transparent;
       color: #fff; }
+  .slider .slider__text .slide2__btn {
+    margin-top: 10px; }
   .slider .slider__text .text__head {
     margin-top: 120px; }
   .slider .slider__text .text__body {
-    margin-top: 50px; }
+    margin-top: 10px;
+    overflow: hidden; }
     .slider .slider__text .text__body p {
       color: #ffffff;
       font-family: "Roboto-Thin", sans-serif;
-      font-size: 24px; }
+      font-size: 24px;
+      line-height: 22px; }
       .slider .slider__text .text__body p span {
         color: #ffffff;
         font-family: "Roboto-Light", sans-serif;
         font-weight: 600;
         font-size: 26px; }
     .slider .slider__text .text__body ul {
-      margin-top: 10px;
-      margin-left: 20px; }
+      margin-top: 5px;
+      margin-left: 20px;
+      float: left; }
       .slider .slider__text .text__body ul li {
         color: #ffffff;
         font-family: "Roboto-Thin", sans-serif;
-        font-size: 24px; }
+        font-size: 22px; }
   .slider .slider__img {
     margin-top: 160px; }
   .slider .slide {

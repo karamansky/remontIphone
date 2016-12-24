@@ -20,6 +20,7 @@ $(function(){
 			}
 		});
 
+
 		//navigation scroll to
 
 		$(".head-menu, .to-top, .logo").on("click","a", function (event) {
@@ -152,7 +153,9 @@ $(function(){
 		});
 
 
-
+		$(document).ready(function($){
+			$("input[name='phone']").mask("+7 (999) 999-99-99");
+		});
 
 
 
