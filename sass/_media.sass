@@ -1,0 +1,291 @@
+@import "bourbon"
+@import "vars"
+
+@media screen and (max-width: $desktop) //1200
+	.slider .slider__text h2
+		font-size: 50px
+		line-height: 55px
+
+	.slider .slider__img
+		margin-top: 100px
+
+	.slider .slider__text a
+		margin-bottom: 50px
+
+	.header .head-menu li a
+		padding: 20px 9px
+		font-size: 18px
+
+@media screen and (max-width: 1024px) //1024
+	.btn
+		font-size: 15px
+
+
+@media screen and (min-width: $tablet) //992
+	#open-menu + .cart-wrap__count
+		display: none
+
+	.header
+		opacity: 0
+
+	.headhesive
+		position: fixed
+		width: 100%
+		transition: all .5s
+		opacity: 1
+		z-index: 10000
+
+
+	.headhesive--stick
+		background: rgba(28,28,28,.7)
+		border-bottom: none
+		&:hover
+			background: rgba(28,28,28,1)
+		.logo
+			padding: 4px
+			a
+				margin-top: 5px
+				display: block
+				width: 35px
+				height: 35px
+				background: url(../images/logo.png) left no-repeat
+				background-size: cover
+				transition: all .4s
+		.head-menu
+			li a
+				display: block
+				padding: 15px 5px
+				font-family: $thin
+				font-size: 16px
+				transition: all .4s
+				&:hover
+					color: $blue-color
+			li:first-child
+				a
+					padding: 15px 0 15px 5px
+			li.active	a
+				color: $blue-color
+
+		.header__callback
+			text-align: right
+			padding-top: 16px
+			.callback-btn
+				display: none
+			a
+				margin-top: 5px
+				border: none
+				background: $red-color
+				color: #fff
+				font-family: $thin
+				font-size: 10px
+				text-align: center
+				display: inline-block
+				width: 100px
+				padding: 4px 0
+
+		.cart-wrap
+			padding-top: 4px
+			margin-bottom: -5px
+			.cart-wrap__count
+				top: 5px
+			a
+				font-size: 36px
+
+@media screen and (max-width: $tablet) //992
+
+	.header .header__callback
+		text-align: right
+		padding-top: 10px
+		padding-right: 30px
+
+	.slider
+		height: 411px
+
+	.slider .slider__text h2
+		font-size: 40px
+		line-height: 42px
+		margin: 110px 0 30px 0
+
+	.slider .slider__text h4
+		font-size: 19px
+
+	.slider .slider__img
+		margin-top: 117px
+
+	.slider .slider__text .text__body
+		margin-top: 7px
+
+	.header .head-menu li a
+		padding: 20px 7px
+
+	.show
+		left: 0!important
+
+	.open
+		right: 5px !important
+		top: 10px !important
+
+	.open + .cart-wrap__count
+		display: none!important
+
+	#open-menu
+		display: block!important
+	.show #open-menu
+		display: none!important
+
+	.header
+		display: block
+		width: 320px
+		position: absolute
+		left: -320px
+		background: rgba(0, 0, 0, .9)
+
+		.container
+			width: 100%
+
+		.cart-wrap__count
+			float: left
+			font-family: $bold
+			font-size: 15px
+			background: $red-color
+			width: 20px
+			height: 20px
+			padding: 0
+			border-radius: 50%
+			text-align: center
+			position: absolute
+			z-index: 1000
+			right: -60px
+			top: 12px
+			color: #fff
+
+		.head-menu
+			ul li
+				float: none
+				a
+					padding: 10px
+					border-bottom: 1px solid #fff
+
+		.cart-wrap
+			width: 50px
+			top: -311px
+			right: -77px
+
+	.advantages-wrapper
+		.advantages__row
+			margin: 0
+		.advantages__item
+			margin: 20px 0
+
+	.contacts
+		.contacts__form-wrap
+			width: 350px
+		h3
+			font-size: 20px
+		h4
+			display: inline-block
+			margin-right: 15px
+			font-size: 16px
+		ul
+			margin: 15px 0
+		.contact__form textarea
+			height: 60px
+
+	.tablet-hide
+		display: none
+
+
+
+@media screen and (max-width: $phone) //768
+	.phone-hide
+		display: none
+
+	.section-head
+		width: 100%
+
+	.slider .slider__text h2
+		font-size: 40px
+		line-height: 45px
+		margin: 100px 0 30px 0
+		text-align: center
+
+	.slider .slider__img
+		width: 50%
+		margin: 30px auto 0px auto
+
+	.slider .slider__text a
+		margin: 0 auto
+		width: 80%
+
+	.delivery-wrapper .delivery__item
+		margin-bottom: 50px
+
+	.store__items
+		margin-bottom: 0
+
+	.store__item
+		margin-bottom: 15px
+
+	.store__items .store__item
+		height: auto
+
+	.store__items .item__hover
+		display: block
+		background: #fff
+		padding: 0px 15px 15px 15px
+		-webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.0)
+		box-shadow: 0 0 13px rgba(0, 0, 0, 0.0)
+		position: relative
+		top: 0
+		left: 0
+		z-index: 10
+		.onStock, .sItem__img, .sItem__h, .sItem__btn
+			display: none
+
+	.tab-content__left
+		width: 150px
+		img
+			width: 100%
+
+	.footer__phones
+		h4
+			line-height: 32px
+
+	.footer-wrapper .footer__social ul li a
+		margin-right: 45px
+
+
+
+@media screen and (max-width: 600px)
+	.tab-content__left
+		width: 100%
+
+		img
+			width: 40%
+
+	.tab-content1 > div
+		overflow: hidden
+		text-align: center
+	.tab-content2 > div
+		overflow: hidden
+		text-align: center
+
+	.contacts .contacts__form-wrap
+		margin: 20px 0
+
+
+@media screen and (max-width: $extra-small) //iPhone6
+	.slider .slider__text a
+		width: 80%
+		font-size: 18px
+
+
+
+@media screen and (max-width: 350px) //iPhone5
+
+
+
+	.service__form input[type=submit]
+		margin-left: 0
+		margin-top: 5px
+		text-transform: uppercase

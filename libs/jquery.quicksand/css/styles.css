@@ -1,0 +1,50 @@
+#filter a{
+	color: #FFFFFF;
+	display: inline-block;
+	height: 39px;
+	line-height: 37px;
+	padding: 0 15px;
+	text-shadow:1px 1px 1px #315218;
+}
+
+#filter a:hover{
+	text-decoration:none;
+}
+
+/*----------------------------
+	Content area
+-----------------------------*/
+
+
+#container{
+	display:block;
+	overflow:hidden;
+	width: 100%;
+	margin:0 auto;
+}
+
+#container li{
+
+	float: left;
+	height: 300px;
+	list-style: none outside none;
+	margin: 6px;
+	position: relative;
+	width: 400px;
+	
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+
+#container li img{
+	width: 100%
+}
+
+#container ul{
+	overflow:hidden;
+}
+
+#container ul.hidden{
+	display:none;
+}
