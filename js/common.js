@@ -5,9 +5,9 @@ $(function(){
 	$(document).ready(function(){
 
 		//open menu icon
-		$('#open-menu').click(function(){
+		$(document).on('click','#open-menu',function(){
 			$(this).toggleClass('open');
-			$(".header").toggleClass('show');
+			$(".header, .headhesive").toggleClass('show');
 		});
 
 		//плавающий header

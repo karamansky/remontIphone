@@ -1,6 +1,15 @@
 @import "bourbon"
 @import "vars"
 
+@media (min-width: 1200px)
+	.slider .slider__text .slide2__btn
+		margin-top: 50px
+
+	.slider .slider__text .text__body
+		ul
+			margin-top: 25px
+
+
 @media (min-width: 993px) and (max-width: 1200px) //1200
 	.slider
 		height: 490px !important
@@ -100,6 +109,9 @@
 
 @media screen and (max-width: $tablet) //992
 
+	.header-wrap
+		display: none
+
 	.store__items .store__item img
 		max-width: 195px
 
@@ -154,13 +166,18 @@
 
 	#open-menu
 		display: block!important
-	.show #open-menu
-		display: none!important
+
+	.header .head-menu li:first-child a
+		padding: 10px
+
+	.header .head-menu li
+			float: left
 
 	.header
 		display: block
 		width: 320px
-		position: absolute
+		position: fixed
+		z-index: 9999
 		left: -320px
 		background: rgba(0, 0, 0, .9)
 
@@ -192,8 +209,8 @@
 
 		.cart-wrap
 			width: 50px
-			top: -311px
-			right: -77px
+			top: -291px
+			right: -63px
 
 	.advantages-wrapper
 		.advantages__row
@@ -218,9 +235,18 @@
 	.tablet-hide
 		display: none
 
+	.header.show #open-menu
+		display: block!important
+
+
 
 
 @media screen and (max-width: $phone) //768
+
+	.header .cart-wrap
+		width: 50px
+		top: -351px
+		right: -133px
 
 	.slider, .slider .owl-item
 		height: 650px!important
@@ -374,6 +400,9 @@
 
 	.master-wrapper .first-ul
 		float: none
+
+	.footer-wrapper .footer__social ul li a
+		margin-right: 25px
 
 
 @media screen and (max-width: 350px) //iPhone5

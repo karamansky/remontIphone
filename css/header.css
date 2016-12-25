@@ -92,7 +92,7 @@ section {
     position: absolute;
     height: 4px;
     width: 50%;
-    background: #fff;
+    background: #1e9dd4;
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -221,7 +221,7 @@ section {
 .slider {
   height: 630px !important;
   overflow: hidden;
-  margin-top: -68px;
+  top: -68px;
   position: relative;
   z-index: 1; }
   .slider .owl-item {

@@ -232,7 +232,8 @@ section {
   background: #ebebeb;
   position: relative;
   z-index: 1;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-top: -68px; }
 
 .service {
   overflow: hidden;
@@ -672,6 +673,12 @@ section {
       background: #1e9dd4;
       color: #fff; }
 
+@media (min-width: 1200px) {
+  .slider .slider__text .slide2__btn {
+    margin-top: 50px; }
+  .slider .slider__text .text__body ul {
+    margin-top: 25px; } }
+
 @media (min-width: 993px) and (max-width: 1200px) {
   .slider {
     height: 490px !important; } }
@@ -760,6 +767,8 @@ section {
         font-size: 36px; } }
 
 @media screen and (max-width: 992px) {
+  .header-wrap {
+    display: none; }
   .store__items .store__item img {
     max-width: 195px; }
   .store__items .sItem__img {
@@ -799,12 +808,15 @@ section {
     display: none !important; }
   #open-menu {
     display: block !important; }
-  .show #open-menu {
-    display: none !important; }
+  .header .head-menu li:first-child a {
+    padding: 10px; }
+  .header .head-menu li {
+    float: left; }
   .header {
     display: block;
     width: 320px;
-    position: absolute;
+    position: fixed;
+    z-index: 9999;
     left: -320px;
     background: rgba(0, 0, 0, 0.9); }
     .header .container {
@@ -831,8 +843,8 @@ section {
         border-bottom: 1px solid #fff; }
     .header .cart-wrap {
       width: 50px;
-      top: -311px;
-      right: -77px; }
+      top: -291px;
+      right: -63px; }
   .advantages-wrapper .advantages__row {
     margin: 0; }
   .advantages-wrapper .advantages__item {
@@ -850,9 +862,15 @@ section {
   .contacts .contact__form textarea {
     height: 60px; }
   .tablet-hide {
-    display: none; } }
+    display: none; }
+  .header.show #open-menu {
+    display: block !important; } }
 
 @media screen and (max-width: 767px) {
+  .header .cart-wrap {
+    width: 50px;
+    top: -351px;
+    right: -133px; }
   .slider, .slider .owl-item {
     height: 650px !important; }
   .slider .owl-controls {
@@ -967,7 +985,9 @@ section {
       margin-top: 5px;
       width: 50%; }
   .master-wrapper .first-ul {
-    float: none; } }
+    float: none; }
+  .footer-wrapper .footer__social ul li a {
+    margin-right: 25px; } }
 
 @media screen and (max-width: 350px) {
   .slider .owl-controls {
