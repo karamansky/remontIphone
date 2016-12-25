@@ -114,6 +114,12 @@ $(function(){
 		//wow animate initial
 		new WOW().init();
 
+		//скрыть/показать кнопку "НАВЕРХ"
+		$(window).scroll(function(){
+			if($('body').scrollTop() >= 500) { $('.to-top').show(); }
+			else {	$('.to-top').hide(); }
+		});
+
 //AJAX email send
 
 
