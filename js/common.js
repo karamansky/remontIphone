@@ -10,7 +10,7 @@ $(function(){
 			$(".header, .headhesive").toggleClass('show');
 		});
 
-		//плавающий header
+	//плавающий header
 		var header = new Headhesive('.header', {
 			offset			: 500,
 			classes: {
@@ -21,8 +21,7 @@ $(function(){
 		});
 
 
-		//navigation scroll to
-
+	//navigation scroll to
 		$(".head-menu, .to-top, .logo").on("click","a", function (event) {
 			event.preventDefault();
 			var id  = $(this).attr('href');
@@ -33,7 +32,7 @@ $(function(){
 		});
 
 
-		/*tabs*/
+	//tabs
 		$('.tab-content1 > div').hide();
 		$('.tab-content1 > div').first().slideDown();
 		$('.tab-buttons1 span').click(function(){
@@ -41,7 +40,7 @@ $(function(){
 			$('#lamp1').removeClass().addClass(thisclass);
 			$('.tab-content1 > div').each(function(){
 				if($(this).hasClass(thisclass)){
-					$(this).fadeIn(200);
+					$(this).fadeIn(500);
 				}
 				else{
 					$(this).hide();
@@ -68,10 +67,9 @@ $(function(){
 			$('.tab-buttons2 span').css("border-bottom", "2px solid #ddd");
 			$('.tab-buttons2 span.'+ activeClass).css("border-bottom", "2px solid #d40a27");
 		});
-		
 
 
-		//owl-carousel
+	//owl-carousel
 		$('.owl-carousel').owlCarousel({
 			singleItem 				: true,
 			itemClass					: ".item-owl",
@@ -79,16 +77,9 @@ $(function(){
 			pagination				: true
 		});
 
-		$('.image-popup').magnificPopup({
-			type: 'image',
-			closeOnContentClick: true,
-			mainClass: 'mfp-img-mobile',
-			image: {
-				verticalFit: true
-			}
-		});
 
-		//popup form
+
+	//popup
 		$('.popup').magnificPopup({
 			type: 'inline',
 			preloader: false,
@@ -97,11 +88,10 @@ $(function(){
 			fixedBgPos: true,
 			mainClass: 'my-mfp-slide-bottom'
 		});
-		$('.img-popup').magnificPopup({
+		$('.image-popup').magnificPopup({
 			type: 'image',
 			closeOnContentClick: true,
-			closeBtnInside: false,
-			fixedContentPos: true,
+			mainClass: 'mfp-img-mobile',
 			image: {
 				verticalFit: true
 			}
@@ -111,18 +101,19 @@ $(function(){
 			$.magnificPopup.close();
 		});
 
-		//wow animate initial
+
+	//wow animate initial
 		new WOW().init();
 
-		//скрыть/показать кнопку "НАВЕРХ"
+
+	//скрыть/показать кнопку "НАВЕРХ"
 		$(window).scroll(function(){
 			if($('body').scrollTop() >= 500) { $('.to-top').show(); }
 			else {	$('.to-top').hide(); }
 		});
 
-//AJAX email send
 
-
+	//AJAX email send
 		$('form').submit(function(event) {
 			event.preventDefault();
 
@@ -158,7 +149,7 @@ $(function(){
 			});
 		});
 
-
+	//masked phone input
 		$(document).ready(function($){
 			$("input[name='phone']").mask("+7 (999) 999-99-99");
 		});
