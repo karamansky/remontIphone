@@ -178,7 +178,7 @@ section {
     .header .header__callback a {
       margin-top: 5px;
       border: none;
-      background: #d40a27;
+      background: #7B519C;
       color: #fff;
       font-family: "Roboto-Thin", sans-serif;
       font-size: 10px;
@@ -196,7 +196,7 @@ section {
       float: left;
       font-family: "Roboto-Bold", sans-serif;
       font-size: 15px;
-      background: #d40a27;
+      background: #7B519C;
       width: 20px;
       height: 20px;
       padding: 0;
@@ -254,7 +254,7 @@ section {
     transition: all .4s;
     margin-top: 50px;
     margin-bottom: 120px;
-    background: #d40a27; }
+    background: #7B519C; }
     .slider .slider__text a:hover {
       background: transparent;
       color: #fff; }

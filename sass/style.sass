@@ -224,7 +224,7 @@
 
 //************** delivery *****************
 .delivery-wrapper
-	background: $text-color
+	background: lighten($text-color, 8%)
 	color: #fff
 	padding-bottom: 110px
 
@@ -235,14 +235,17 @@
 		text-align: center
 
 		.icon-block, .h-block
+			overflow: hidden
 			margin-bottom: 15px
 			font-family: $light
 
 		.icon-block
-			height: 150px
+			height: 125px
 			img
-				margin-bottom: 15px
 				height: 100%
+				margin-bottom: 20px
+
+
 
 		i
 			color: $blue-color
@@ -398,8 +401,7 @@
 		font-family: $thin
 		font-size: 16px
 		display: inline-block
-		width: 112px
-		padding: 8px 0
+		padding: 8px 12px
 		margin-left: -4px
 		text-transform: uppercase
 		&:hover
@@ -457,7 +459,8 @@
 		background-color: #fff
 
 	input[type=submit]
-		padding: 7px 0
+		padding: 7px 12px
+		width: auto
 
 //**************end master
 
@@ -465,144 +468,167 @@
 
 //**************advantages
 //.advantages-wrapper
-//	background: $grey-color
-
-	.advantages
-		padding-bottom: 50px
-
-	.advantages__row
-		overflow: hidden
-		margin: 50px 0
-
-	//.td
-	//	display: table-cell
-	//	vertical-align: middle
-	//
-	//.icon-block
-	//	position: relative
-	//	color: #fff
-	//	background: url("../images/romb.png") center no-repeat
-	//	width: 110px
-	//	height: 110px
-	//	text-align: center
-	//	font-size: 45px
-	//
-	//.text-block
-	//	padding-left: 20px
-	//	h4
-	//		font-size: 21px
-	//		margin-bottom: 10px
+//	background: $text-color
+//	color: #fff
+//	font-family: $thin
+//
+//	.advantages
+//		padding: 50px 0 86px 0
+//
+//	.advantages__item
+//		height: 290px
+//		overflow: hidden
+//		margin: 15px 0
+//		background: lighten($text-color, 5%)
+//		transition: all ease .5s
+//		&:hover
+//			background: lighten($text-color, 10%)
+//			h3:after
+//				background: $blue-color
+//			.icon-block i
+//				color: $blue-color
+//
+//	.icon-block i
+//		transition: all ease .5s
+//		color: $text-color
+//		font-size: 200px
+//		margin: -20px 0 0 -20px
+//
+//	.text-block
+//		padding-bottom: 50px
+//		h3
+//			position: relative
+//			text-align: right
+//			padding-right: 35px
+//			&:after
+//				content: ""
+//				display: inline-block
+//				background: $red-color
+//				width: 30px
+//				height: 2px
+//				position: absolute
+//				top: 0
+//				right: 0
+//				transition: all ease .5s
+//		p
+//			text-align: right
+//			padding: 10px 35px 0 30px
 
 
 
 .advantages-wrapper
-	background: $text-color
+	background: url("../images/advantages.jpg") center fixed no-repeat
+	background-size: cover
 	color: #fff
 	font-family: $thin
+	&__bg-layer
+		//background: rgba(34,34,34, .8)
+		background: rgba(0, 0, 0, .8)
 
 	.advantages
-		padding: 50px 0
+		padding: 50px 0 86px 0
 
 	.advantages__item
 		height: 290px
 		overflow: hidden
 		margin: 15px 0
-		background: lighten($text-color, 5%)
+		//background: lighten($text-color, 5%)
 		transition: all ease .5s
 		&:hover
 			background: lighten($text-color, 10%)
 			h3:after
 				background: $blue-color
+				width: 70%
+				bottom: -15px
+				margin-left: -35%
 			.icon-block i
 				color: $blue-color
 
-	.icon-block i
+	.icon-block
 		transition: all ease .5s
 		color: $text-color
-		font-size: 200px
-		margin: -20px 0 0 -20px
+		text-align: center
+		margin-bottom: 30px
 
 	.text-block
-		padding-bottom: 50px
+		text-align: center
 		h3
+			line-height: 30px
 			position: relative
-			text-align: right
-			padding-right: 35px
+			text-align: center
+			margin-bottom: 33px
 			&:after
 				content: ""
-				display: inline-block
-				background: $red-color
-				width: 30px
-				height: 2px
+				display: block
+				background: $blue-color
+				width: 30%
+				height: 1px
 				position: absolute
-				top: 0
-				right: 0
+				bottom: -15px
+				left: 50%
+				margin-left: -15%
 				transition: all ease .5s
 		p
-			text-align: right
-			padding: 10px 35px 0 30px
-		
-
-
-
-
-
+			font-size: 16px
+			line-height: 20px
+			text-align: center
+			padding: 0 30px 0 30px
 //**************end advantages
 
 
 
 //**************contacts
-#map
-	height: 100%
-	width: 100%
-	position: absolute
-	top: 0px
-	left: 0
+//#map
+//	height: 100%
+//	width: 100%
+//	position: absolute
+//	top: 0px
+//	left: 0
 
-.contacts
-	overflow: hidden
-	padding-bottom: 26px
+//.contacts
+//	overflow: hidden
+//	padding-bottom: 26px
 
-	.contacts__form-wrap
-		background: rgba(0, 0, 0, 0.85)
-		width: 445px
-		padding: 25px
-		color: #fff
-		margin-top: -5px
-
-	.contact__form
-		overflow: hidden
-		input
-			color: $text-color
-			float: left
-			border: 1px solid #b6b8b3
-			padding: 10px 15px
-			margin-top: 17px
-			width: 49%
-			&:first-child
-				margin-right: 2%
-
-		textarea
-			color: $text-color
-			padding: 15px
-			width: 100%
-			height: 100px
-			margin-top: 15px
-
-		button
-			margin-top: 15px
-			border: none
-			background: $red-color
-			color: #fff
-			font-family: $thin
-			font-size: 16px
-			display: inline-block
-			width: 112px
-			padding: 8px 0
-			margin-left: -4px
-			text-transform: uppercase
-			&:hover
-				background: $blue-color
+	//.contacts__form-wrap
+	//	background: rgba(0, 0, 0, 0.85)
+	//	width: 445px
+	//	padding: 25px
+	//	color: #fff
+	//	margin-top: -5px
+	//
+	//.contact__form
+	//	overflow: hidden
+	//	input
+	//		color: $text-color
+	//		float: left
+	//		border: 1px solid #b6b8b3
+	//		padding: 10px 15px
+	//		margin-top: 17px
+	//		width: 49%
+	//		&:first-child
+	//			margin-right: 2%
+	//
+	//	textarea
+	//		color: $text-color
+	//		padding: 15px
+	//		width: 100%
+	//		height: 100px
+	//		margin-top: 15px
+	//
+	//	button
+	//		margin-top: 15px
+	//		border: none
+	//		background: $red-color
+	//		color: #fff
+	//		font-family: $thin
+	//		font-size: 16px
+	//		display: inline-block
+	//		width: 112px
+	//		padding: 8px 0
+	//		margin-left: -4px
+	//		text-transform: uppercase
+	//		&:hover
+	//			background: $blue-color
 
 	h3
 		text-transform: uppercase
@@ -629,6 +655,31 @@
 			&:hover
 				background: $blue-color
 				color: #fff
+
+.contacts
+	padding: 50px 0 86px 0
+
+	p
+		font-size: 16px
+		line-height: 20px
+		padding: 7px 0
+		font-family: $medium
+
+	ul
+		margin-left: 10px
+		margin-bottom: 10px
+
+	.contacts__map
+		padding-top: 15px
+		.contacts__streetview
+			margin-bottom: 15px
+		h4
+			padding-bottom: 10px
+		img
+			width: 80%
+		ul li
+			font-family: $medium
+
 //**************end contacts
 
 
@@ -747,6 +798,9 @@
 		line-height: 1.2
 		margin-bottom: 50px
 
+	.cart__empty
+		display: none
+
 	table
 		tr
 			background: #fff
@@ -794,8 +848,39 @@
 	.cart__total
 		text-align: right
 		h3
-			padding: 10px 30px 30px 10px
+			padding: 15px 0 5px 15px
+
+	.cart__form
+		overflow: hidden
+
+		input, textarea
+			border: 1px solid $grey-bg-color
+			width: 70%
+			padding: 7px 5px 7px 12px
+			margin-bottom: 5px
+			color: $text-color
+			&::-webkit-input-placeholder
+				color: $text-color
+				font-size: 15px
+			&::-moz-placeholder
+				color: $text-color
+				font-size: 15px
+			&:-moz-placeholder
+				color: $text-color
+				font-size: 15px
+			&:-ms-input-placeholder
+				color: $text-color
+				font-size: 15px
+			&:focus
+				border: 1px solid $green-color
+
+		textarea
+			height: 125px
+			max-height: 200px
+			max-width: 70%
+
 		button
+			display: block
 			margin-right: 15px
 			background: $red-color
 			color: #fff

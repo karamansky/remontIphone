@@ -78,6 +78,8 @@
       <div class="col-sm-12">
         <h2>Корзина</h2>
         <div class="cart__table">
+
+          <h3 class="cart__empty">Корзина пуста!</h3>
           <table>
             <tr>
               <th></th>
@@ -144,9 +146,29 @@
       </div>
     </div>
     <div class="row">
-      <div class="cart__total">
-        <h3>Итого: <span class="total-count">3</span>&nbsp;шт. на сумму <span class="total">34500</span>&nbsp;р.</h3>
-        <button type="submit" class="cart__btn" name="cartOrder">Оформить заказ</button>
+      <div class="col-sm-12">
+        <div class="cart__total">
+          <h3>Итого: <span class="total-count">3</span>&nbsp;шт. на сумму <span class="total">0</span>&nbsp;р.</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="cart__form">
+          <h2>Оформление заказа</h2>
+          <form action="#" id="cart__form" method="post">
+
+            <input type="hidden" name="goods" value="">
+            <input type="hidden" name="sum" value="">
+
+            <input type="text" name="name" placeholder="ФИО *" required="required"/>
+            <input type="text" name="phone" placeholder="Телефон *" required="required"/>
+            <input type="email" name="email" placeholder="E-mail" />
+            <textarea name="message" placeholder="Комментарий к заказу"></textarea>
+
+            <button type="submit" class="cart__btn" name="cartOrder">Оформить заказ</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -231,52 +253,13 @@
   </div>
 </div><!-- #callback -->
 
-<div id="zakazIphone" class="popup-form-wrapper gallery-form mfp-hide">
-  <div class="close">
-    <i class="fa fa-times"></i>
-  </div><!-- close -->
-  <div class="popup-form">
-    <div class="popup-form__head">
-      <h3>Заполните форму</h3>
-      <p>и мы скоро свяжемся с Вами</p>
-    </div>
-    <div class="popup-form__form">
-      <form action="#" id="zakazPhone" method="post">
-        <input type="text" name="name" placeholder="Имя *" required="required"/>
-        <input type="text" name="phone" placeholder="Телефон *" required="required"/>
-        <input type="hidden" name="flag" value="zakazPhone"/>
-        <button type="submit" name="zakazphone-submit" class="popup-form__btn">Отправить</button>
-      </form>
-      <p>Обработка ваших персональных данных строго конфиденциальна.</p>
-    </div>
-  </div>
-</div><!-- #zakazIphone -->
-
-<div id="master1" class="popup-form-wrapper gallery-form mfp-hide">
-  <div class="close">
-    <i class="fa fa-times"></i>
-  </div><!-- close -->
-  <div class="popup-form">
-    <div class="popup-form__head">
-      <h3>Заполните форму</h3>
-      <p>и мастер скоро свяжется с Вами</p>
-    </div>
-    <div class="popup-form__form">
-      <form action="#" id="zakazMaster" method="post">
-        <input type="text" name="name" placeholder="Имя *" required="required"/>
-        <input type="text" name="phone" placeholder="Телефон *" required="required"/>
-        <input type="hidden" name="flag" value="zakazMaster"/>
-        <button type="submit" name="zakazmaster-submit" class="popup-form__btn">Отправить</button>
-      </form>
-      <p>Обработка ваших персональных данных строго конфиденциальна.</p>
-    </div>
-  </div>
-</div><!-- #zakazIphone -->
-
 <!-- end popup forms -->
 
-<div class="to-top">
-  <a href="#to-top"><i class="fa fa-arrow-up"></i></a>
+<div class="success">
+  <h3>Заявка принята в обработку. Ожидайте звонка менеджера. <br/>Спасибо за заказ!</h3>
+</div>
+<div class="error">
+  <h3>Ошибка! Попробуйте еще раз или свяжитесь с нами при помощи телефона. Спасибо за понимание.</h3>
 </div>
 
 <!-- styles -->
