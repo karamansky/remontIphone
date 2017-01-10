@@ -280,7 +280,7 @@ $(function(){
 			});
 			var activeClass = $("#lamp1").attr("class");
 			$('.tab-buttons1 span').css("border-bottom", "2px solid #ddd");
-			$('.tab-buttons1 span.'+ activeClass).css("border-bottom", "2px solid #d40a27");
+			$('.tab-buttons1 span.'+ activeClass).css("border-bottom", "2px solid #7B519C");
 		});
 		$('.tab-content2 > div').hide();
 		$('.tab-content2 > div').first().slideDown();
@@ -297,7 +297,7 @@ $(function(){
 			});
 			var activeClass = $("#lamp2").attr("class");
 			$('.tab-buttons2 span').css("border-bottom", "2px solid #ddd");
-			$('.tab-buttons2 span.'+ activeClass).css("border-bottom", "2px solid #d40a27");
+			$('.tab-buttons2 span.'+ activeClass).css("border-bottom", "2px solid #7B519C");
 		});
 
 

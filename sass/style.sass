@@ -416,16 +416,27 @@
 		float: left
 
 		img
+			display: none
 			max-width: 300px
 			height: auto
+			
+		.table
+			float: left
+			margin-right: 10px
 
 		table
 			text-align: left
+			tr
+				border-bottom: 1px solid $grey-bg-color
+				&:hover
+					background: $red-color
+					color: #fff
+					cursor: default
 			td
-				font-family: $bold
-				font-size: 20px
-				line-height: 35px
-				padding-left: 25px
+				font-family: $medium
+				font-size: 16px
+				line-height: 30px
+				padding: 0 5px 0 10px
 
 //**************end service
 

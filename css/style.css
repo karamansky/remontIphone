@@ -435,15 +435,25 @@ section {
     padding-top: 25px;
     float: left; }
     .tab-content1 .tab-content__left img, .tab-content1 .tab-content__right img, .tab-content2 .tab-content__left img, .tab-content2 .tab-content__right img {
+      display: none;
       max-width: 300px;
       height: auto; }
+    .tab-content1 .tab-content__left .table, .tab-content1 .tab-content__right .table, .tab-content2 .tab-content__left .table, .tab-content2 .tab-content__right .table {
+      float: left;
+      margin-right: 10px; }
     .tab-content1 .tab-content__left table, .tab-content1 .tab-content__right table, .tab-content2 .tab-content__left table, .tab-content2 .tab-content__right table {
       text-align: left; }
+      .tab-content1 .tab-content__left table tr, .tab-content1 .tab-content__right table tr, .tab-content2 .tab-content__left table tr, .tab-content2 .tab-content__right table tr {
+        border-bottom: 1px solid #dfdfdf; }
+        .tab-content1 .tab-content__left table tr:hover, .tab-content1 .tab-content__right table tr:hover, .tab-content2 .tab-content__left table tr:hover, .tab-content2 .tab-content__right table tr:hover {
+          background: #7B519C;
+          color: #fff;
+          cursor: default; }
       .tab-content1 .tab-content__left table td, .tab-content1 .tab-content__right table td, .tab-content2 .tab-content__left table td, .tab-content2 .tab-content__right table td {
-        font-family: "Roboto-Bold", sans-serif;
-        font-size: 20px;
-        line-height: 35px;
-        padding-left: 25px; }
+        font-family: "Roboto-Medium", sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 0 5px 0 10px; }
 
 .master-wrapper {
   padding: 50px 0 100px 0;
