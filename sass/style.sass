@@ -24,6 +24,7 @@
 	height: 36px
 
 .section-head
+	display: none
 	width: 320px
 	background: $red-color
 	text-align: center
@@ -72,8 +73,15 @@
 .store
 	padding-bottom: 50px
 
+
 .store__items
 	margin-bottom: 30px
+	h2
+		font-size: 34px
+		line-height: 50px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 45px
 
 	.store__item
 		height: 375px
@@ -270,6 +278,12 @@
 
 .service
 	overflow: hidden
+	h2
+		padding: 40px 0 0 0
+		font-size: 34px
+		line-height: 50px
+		text-transform: uppercase
+		text-align: center
 	&__description
 		margin: 25px 0
 		text-align: center
@@ -277,6 +291,10 @@
 	&__head
 		text-align: center
 		margin-bottom: 25px
+
+	&__form	p
+		padding: 15px 0 10px 0
+
 
 
 	/*tabs*/
@@ -452,7 +470,7 @@
 		font-family: $light
 		font-size: 34px
 		text-transform: uppercase
-		margin-bottom: 30px
+		margin-bottom: 20px
 
 	p, li
 		line-height: 30px
@@ -460,6 +478,9 @@
 
 	ul
 		margin-left: 15px
+		li
+			list-style-image: url("../images/list-style-circle.svg")
+			list-style-position: inside
 	.first-ul
 		margin-right: 30px
 		float: left
@@ -478,66 +499,24 @@
 
 
 //**************advantages
-//.advantages-wrapper
-//	background: $text-color
-//	color: #fff
-//	font-family: $thin
-//
-//	.advantages
-//		padding: 50px 0 86px 0
-//
-//	.advantages__item
-//		height: 290px
-//		overflow: hidden
-//		margin: 15px 0
-//		background: lighten($text-color, 5%)
-//		transition: all ease .5s
-//		&:hover
-//			background: lighten($text-color, 10%)
-//			h3:after
-//				background: $blue-color
-//			.icon-block i
-//				color: $blue-color
-//
-//	.icon-block i
-//		transition: all ease .5s
-//		color: $text-color
-//		font-size: 200px
-//		margin: -20px 0 0 -20px
-//
-//	.text-block
-//		padding-bottom: 50px
-//		h3
-//			position: relative
-//			text-align: right
-//			padding-right: 35px
-//			&:after
-//				content: ""
-//				display: inline-block
-//				background: $red-color
-//				width: 30px
-//				height: 2px
-//				position: absolute
-//				top: 0
-//				right: 0
-//				transition: all ease .5s
-//		p
-//			text-align: right
-//			padding: 10px 35px 0 30px
-
-
-
 .advantages-wrapper
 	background: url("../images/advantages.jpg") center fixed no-repeat
 	background-size: cover
-	color: #fff
-	font-family: $thin
+	color: $text-color
+	font-family: $light
 	&__bg-layer
 		//background: rgba(34,34,34, .8)
-		background: rgba(0, 0, 0, .8)
+		background: rgba(0, 0, 0, .1)
 
 	.advantages
 		padding: 50px 0 86px 0
+
+		h2
+			font-size: 34px
+			line-height: 50px
+			text-transform: uppercase
+			text-align: center
+			margin-bottom: 15px
 
 	.advantages__item
 		height: 290px
@@ -546,6 +525,7 @@
 		//background: lighten($text-color, 5%)
 		transition: all ease .5s
 		&:hover
+			color: #fff
 			background: lighten($text-color, 10%)
 			h3:after
 				background: $blue-color
@@ -589,86 +569,13 @@
 
 
 //**************contacts
-//#map
-//	height: 100%
-//	width: 100%
-//	position: absolute
-//	top: 0px
-//	left: 0
-
-//.contacts
-//	overflow: hidden
-//	padding-bottom: 26px
-
-	//.contacts__form-wrap
-	//	background: rgba(0, 0, 0, 0.85)
-	//	width: 445px
-	//	padding: 25px
-	//	color: #fff
-	//	margin-top: -5px
-	//
-	//.contact__form
-	//	overflow: hidden
-	//	input
-	//		color: $text-color
-	//		float: left
-	//		border: 1px solid #b6b8b3
-	//		padding: 10px 15px
-	//		margin-top: 17px
-	//		width: 49%
-	//		&:first-child
-	//			margin-right: 2%
-	//
-	//	textarea
-	//		color: $text-color
-	//		padding: 15px
-	//		width: 100%
-	//		height: 100px
-	//		margin-top: 15px
-	//
-	//	button
-	//		margin-top: 15px
-	//		border: none
-	//		background: $red-color
-	//		color: #fff
-	//		font-family: $thin
-	//		font-size: 16px
-	//		display: inline-block
-	//		width: 112px
-	//		padding: 8px 0
-	//		margin-left: -4px
-	//		text-transform: uppercase
-	//		&:hover
-	//			background: $blue-color
-
-	h3
-		text-transform: uppercase
-		font-family: $medium
-		span
-			font-family: $light
-	h4
-		line-height: 26px
-	ul
-		margin: 25px 0
-		overflow: hidden
-		li a
-			display: inline-block
-			float: left
-			width: 38px
-			height: 38px
-			background: #fff
-			color: #000000
-			text-align: center
-			border-radius: 50%
-			font-size: 24px
-			line-height: 40px
-			margin-right: 25px
-			&:hover
-				background: $blue-color
-				color: #fff
-
 .contacts
 	padding: 50px 0 86px 0
+
+	h2
+		font-size: 34px
+		line-height: 50px
+		text-transform: uppercase
 
 	p
 		font-size: 16px
@@ -689,6 +596,8 @@
 		img
 			width: 80%
 		ul li
+			list-style-image: url("../images/list-style-circle.svg")
+			list-style-position: inside
 			font-family: $medium
 
 //**************end contacts

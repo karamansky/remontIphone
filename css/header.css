@@ -282,7 +282,9 @@ section {
       .slider .slider__text .text__body ul li {
         color: #ffffff;
         font-family: "Roboto-Thin", sans-serif;
-        font-size: 22px; }
+        font-size: 22px;
+        list-style-image: url("../images/list-style-circle.svg");
+        list-style-position: inside; }
   .slider .slider__img {
     margin-top: 160px; }
   .slider .slide {
