@@ -1,0 +1,30 @@
+<svg id="58053b71-6cef-4661-ba08-00b4d868bb3d" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.85 30.83">
+  <defs>
+    <style>
+      .\31 e238fee-5bc3-477f-b7b8-4aedfcaf266f, .\35 3f7b09d-5076-4f2d-8e98-38c426746809 {
+        fill: none;
+        stroke: #7b519c;
+      }
+
+      .\31 e238fee-5bc3-477f-b7b8-4aedfcaf266f {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .\35 3f7b09d-5076-4f2d-8e98-38c426746809 {
+        stroke-miterlimit: 22.93;
+      }
+    </style>
+  </defs>
+  <title>remontprivas</title>
+  <g>
+    <path class="1e238fee-5bc3-477f-b7b8-4aedfcaf266f" d="M-93,81.22A14.92,14.92,0,0,1-78.12,96.14,14.92,14.92,0,0,1-93,111.05,14.92,14.92,0,0,1-108,96.14,14.92,14.92,0,0,1-93,81.22h0Z" transform="translate(108.47 -80.72)"/>
+    <line class="1e238fee-5bc3-477f-b7b8-4aedfcaf266f" x1="23.97" y1="7.22" x2="16.79" y2="14.4"/>
+    <line class="1e238fee-5bc3-477f-b7b8-4aedfcaf266f" x1="14" y1="14.79" x2="8.44" y2="11.58"/>
+    <path class="53f7b09d-5076-4f2d-8e98-38c426746809" d="M-93,94.45a1.69,1.69,0,0,0-1.69,1.68A1.69,1.69,0,0,0-93,97.82a1.68,1.68,0,0,0,1.69-1.68A1.68,1.68,0,0,0-93,94.45h0Z" transform="translate(108.47 -80.72)"/>
+    <line class="1e238fee-5bc3-477f-b7b8-4aedfcaf266f" x1="15.43" y1="4.09" x2="15.43" y2="5.13"/>
+    <line class="1e238fee-5bc3-477f-b7b8-4aedfcaf266f" x1="4.09" y1="15.42" x2="5.14" y2="15.42"/>
+    <line class="1e238fee-5bc3-477f-b7b8-4aedfcaf266f" x1="15.43" y1="26.75" x2="15.43" y2="25.7"/>
+    <line class="1e238fee-5bc3-477f-b7b8-4aedfcaf266f" x1="26.77" y1="15.42" x2="25.72" y2="15.42"/>
+  </g>
+</svg>

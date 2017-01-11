@@ -1,0 +1,24 @@
+<svg id="ff3cda4f-6f62-4700-b964-b2edd6ac1e2b" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.75 24.75">
+  <defs>
+    <style>
+      .\37 b9e290d-1383-4330-b89e-5c37fe3d5122, .\38 f232c02-ae64-41ac-b737-ff464387e38e {
+        fill: none;
+        stroke: #7b519c;
+      }
+
+      .\37 b9e290d-1383-4330-b89e-5c37fe3d5122 {
+        stroke-miterlimit: 22.93;
+      }
+
+      .\38 f232c02-ae64-41ac-b737-ff464387e38e {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>zapchasti</title>
+  <g>
+    <path class="7b9e290d-1383-4330-b89e-5c37fe3d5122" d="M-107.15,151.36h28.35a1.67,1.67,0,0,1,1.7,1.7l-0.28,4.42a1.75,1.75,0,0,1-1.7,1.7h-27.78a1.75,1.75,0,0,1-1.7-1.7l-0.28-4.42a1.67,1.67,0,0,1,1.7-1.7h0Zm27.5,8.27-0.57,13.78m0,0a1.75,1.75,0,0,1-1.7,1.7m0,0h-21.83a1.75,1.75,0,0,1-1.7-1.7l-0.85-13.78" transform="translate(109.36 -150.86)"/>
+    <line class="8f232c02-ae64-41ac-b737-ff464387e38e" x1="16.38" y1="0.5" x2="16.38" y2="24.25"/>
+  </g>
+</svg>

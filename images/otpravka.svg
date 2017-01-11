@@ -1,0 +1,21 @@
+<svg id="5ab4dc10-d118-4ef1-a016-f8faa98f66c6" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.18 32.23">
+  <defs>
+    <style>
+      .\33 81b409b-e8c9-4578-b99a-1d70ed708ddb {
+        fill: none;
+        stroke: #7b519c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>otpravka</title>
+  <g>
+    <path class="381b409b-e8c9-4578-b99a-1d70ed708ddb" d="M157.27,148.66l19.24-4.75,4.75,19.24-17,4.21a2.27,2.27,0,0,1-2.75-1.66l-4.21-17h0Z" transform="translate(-146.58 -143.38)"/>
+    <path class="381b409b-e8c9-4578-b99a-1d70ed708ddb" d="M158.74,169.52a2.83,2.83,0,1,1-2.07,3.43,2.83,2.83,0,0,1,2.07-3.43h0Z" transform="translate(-146.58 -143.38)"/>
+    <polyline class="381b409b-e8c9-4578-b99a-1d70ed708ddb" points="11.2 22.77 5.6 0.51 0.5 0.5"/>
+    <line class="381b409b-e8c9-4578-b99a-1d70ed708ddb" x1="19.02" y1="27.45" x2="33.83" y2="23.79"/>
+    <line class="381b409b-e8c9-4578-b99a-1d70ed708ddb" x1="23.49" y1="16.67" x2="21.53" y2="8.74"/>
+    <polyline class="381b409b-e8c9-4578-b99a-1d70ed708ddb" points="18.85 13.25 21.53 8.74 26.01 11.48"/>
+  </g>
+</svg>

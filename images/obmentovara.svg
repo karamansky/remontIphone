@@ -1,0 +1,20 @@
+<svg id="009ee23d-12c0-44ae-8788-6195e68401e6" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.88 32.96">
+  <defs>
+    <style>
+      .\30 7b3f1a3-3062-43a2-9c05-e66920686953 {
+        fill: none;
+        stroke: #7b519c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>obmentovara</title>
+  <g>
+    <path class="07b3f1a3-3062-43a2-9c05-e66920686953" d="M92.75-30.13h6.85c3,0,5.37,2,5.37,4.51v0.1C105-23,102.55-21,99.59-21H92.75" transform="translate(-81.48 49.55)"/>
+    <polyline class="07b3f1a3-3062-43a2-9c05-e66920686953" points="16.32 15.35 10.2 19.44 16.32 23.52"/>
+    <path class="07b3f1a3-3062-43a2-9c05-e66920686953" d="M83-42.06h29.92a1,1,0,0,1,1,1v23a1,1,0,0,1-1,1H83a1,1,0,0,1-1-1v-23a1,1,0,0,1,1-1h0Z" transform="translate(-81.48 49.55)"/>
+    <path class="07b3f1a3-3062-43a2-9c05-e66920686953" d="M82.12-42L86-48.22A2.85,2.85,0,0,1,87.86-49H108a2.88,2.88,0,0,1,1.81.82L113.72-42" transform="translate(-81.48 49.55)"/>
+    <polyline class="07b3f1a3-3062-43a2-9c05-e66920686953" points="18.76 0.5 19.9 7.45 19.9 12.21 12.98 12.21 12.98 7.45 14.12 0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg id="c7501e99-4631-46db-bcc4-3b05cae18bad" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.15 26.83">
+  <defs>
+    <style>
+      .\38 b783d4b-3940-4184-98ee-7414a0db4340, .ec334d44-694e-4913-bad8-a31aca570d79 {
+        fill: none;
+        stroke: #7b519c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .\38 b783d4b-3940-4184-98ee-7414a0db4340 {
+        stroke-width: 1.15px;
+      }
+
+      .ec334d44-694e-4913-bad8-a31aca570d79 {
+        stroke-width: 1.12px;
+      }
+    </style>
+  </defs>
+  <title>oplatakartoy</title>
+  <g>
+    <path class="8b783d4b-3940-4184-98ee-7414a0db4340" d="M167.26-87H150.92A2.92,2.92,0,0,1,148-90v-19.85a2.92,2.92,0,0,1,2.91-2.91H182.1a2.92,2.92,0,0,1,2.91,2.91V-90A2.93,2.93,0,0,1,182.1-87h-1.33" transform="translate(-147.44 113.29)"/>
+    <line class="8b783d4b-3940-4184-98ee-7414a0db4340" x1="4.68" y1="21.78" x2="7.98" y2="21.78"/>
+    <line class="8b783d4b-3940-4184-98ee-7414a0db4340" x1="11.98" y1="21.78" x2="16.08" y2="21.78"/>
+    <line class="ec334d44-694e-4913-bad8-a31aca570d79" x1="19.87" y1="26.25" x2="33.39" y2="26.25"/>
+    <polygon class="8b783d4b-3940-4184-98ee-7414a0db4340" points="37.58 6.68 37.58 11.42 0.57 11.42 0.57 6.68 37.58 6.68 37.58 6.68"/>
+  </g>
+</svg>

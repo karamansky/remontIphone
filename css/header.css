@@ -235,6 +235,10 @@ section {
     .slider .slider__text h2 span {
       font-family: "Roboto-Light", sans-serif;
       font-weight: 600; }
+  .slider .slider__text h3 {
+    color: #fff;
+    font-size: 35px;
+    line-height: 40px; }
   .slider .slider__text h4 {
     color: #ffffff;
     font-family: "Roboto-Thin", sans-serif;
@@ -284,9 +288,11 @@ section {
         font-family: "Roboto-Thin", sans-serif;
         font-size: 22px;
         list-style-image: url("../images/list-style-circle.svg");
-        list-style-position: inside; }
+        list-style-position: outside; }
   .slider .slider__img {
     margin-top: 160px; }
+  .slider .slider__img.slide3__img {
+    margin-top: 100px; }
   .slider .slide {
     background: rgba(0, 0, 0, 0.8); }
   .slider .slide1-wrap {

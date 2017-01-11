@@ -232,32 +232,32 @@
 
 //************** delivery *****************
 .delivery-wrapper
-	background: lighten($text-color, 8%)
+	//background: lighten($text-color, 8%)
+	//background: rgba(60, 60, 60, .9)
+	background: url("../images/map_delivery.png") center fixed no-repeat
+	background-size: 100%
 	color: #fff
-	padding-bottom: 110px
+	padding-bottom: 80px
 
 	.delivery
+		overflow: hidden
 		padding-top: 80px
 
 	.delivery__item
 		text-align: center
 
-		.icon-block, .h-block
+		.h-block
 			overflow: hidden
-			margin-bottom: 15px
+			margin-bottom: 20px
 			font-family: $light
 
+
 		.icon-block
-			height: 125px
+			height: 100px
 			img
-				height: 100%
-				margin-bottom: 20px
+				width: 70px
+				height: 70px
 
-
-
-		i
-			color: $blue-color
-			font-size: 120px
 		h3
 			text-transform: uppercase
 			line-height: 30px
@@ -509,7 +509,7 @@
 		background: rgba(0, 0, 0, .1)
 
 	.advantages
-		padding: 50px 0 86px 0
+		padding: 50px 0 50px 0
 
 		h2
 			font-size: 34px
@@ -519,14 +519,21 @@
 			margin-bottom: 15px
 
 	.advantages__item
-		height: 290px
+		height: 250px
 		overflow: hidden
 		margin: 15px 0
-		//background: lighten($text-color, 5%)
 		transition: all ease .5s
+		img
+			width: 70px
+			height: 70px
+		h3
+			font-size: 20px
+			font-family: $thin
+			width: 60%
+			margin: 0 auto
 		&:hover
 			color: #fff
-			background: lighten($text-color, 10%)
+			background: lighten($text-color, 15%)
 			h3:after
 				background: $blue-color
 				width: 70%
@@ -539,7 +546,7 @@
 		transition: all ease .5s
 		color: $text-color
 		text-align: center
-		margin-bottom: 30px
+		margin: 10px 0 20px 0
 
 	.text-block
 		text-align: center
@@ -547,7 +554,7 @@
 			line-height: 30px
 			position: relative
 			text-align: center
-			margin-bottom: 33px
+			//margin-bottom: 15px
 			&:after
 				content: ""
 				display: block
@@ -611,13 +618,12 @@
 	.review
 		overflow: hidden
 		padding-bottom: 50px
-		h3
-			font-size: 28px
-			font-family: $medium
+		h2
+			font-size: 34px
+			line-height: 50px
+			font-family: $light
 			text-align: center
 			padding: 30px 0
-			span
-				font-family: $light
 
 //**************end review
 
