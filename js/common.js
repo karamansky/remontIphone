@@ -4,6 +4,10 @@ $(function(){
 
 	$(document).ready(function(){
 
+		if(getCookie("videopopup") != undefined){
+			$(".videopopup").css("display","none");
+		}
+
 		//open menu icon
 		$(document).on('click','#open-menu',function(){
 			$(this).toggleClass('open');
@@ -23,7 +27,7 @@ $(function(){
 
 	//navigation scroll to
 		$(".head-menu, .to-top, .logo").on("click","a", function (event) {
-			event.preventDefault();
+			// event.preventDefault();
 			var id  = $(this).attr('href');
 			//узнаем высоту от начала страницы до блока на который ссылается якорь
 			var	top = $(id).offset().top - 80;
@@ -305,10 +309,12 @@ $(function(){
 		$('.owl-carousel').owlCarousel({
 			singleItem 				: true,
 			itemClass					: ".item-owl",
-			autoPlay					: false,
-			pagination				: true
+			autoPlay					: 8000,
+			pagination				: true,
+			paginationSpeed 	: 800,
+			rewindSpeed 			: 800,
+			autoplayHoverPause: true
 		});
-
 
 
 	//popup
@@ -328,9 +334,31 @@ $(function(){
 				verticalFit: true
 			}
 		});
+		$('.videopopup__youtube').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: false
+		});
 		$(document).on('click', '.close', function (e) {
 			e.preventDefault();
 			$.magnificPopup.close();
+		});
+//плавное появление при прокрутке попап для видео
+		$(window).scroll(function(){
+			var bo = $(this).scrollTop();
+			var a = $(".videopopup").css('opacity')
+			if ( bo >= 200 && a == 0) {$(".videopopup").stop().animate({'opacity':'1'},500)};
+			if ( bo < 200 && a == 1) {$(".videopopup").stop().animate({'opacity':'0'},500)};
+		});
+
+		$(".videopopup__thnx").on("click", function(e){
+			e.preventDefault();
+			$(".videopopup").fadeOut("fast");
+
+			setCookie('videopopup', 'true');
 		});
 
 

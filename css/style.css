@@ -130,6 +130,7 @@ section {
   margin-top: 50px; }
 
 .store {
+  margin-top: -50px;
   padding-bottom: 50px; }
 
 .store__items {
@@ -139,7 +140,7 @@ section {
     line-height: 50px;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 45px; }
+    margin-bottom: 50px; }
   .store__items .store__item {
     height: 375px;
     padding: 5px 15px 15px 15px;
@@ -269,9 +270,9 @@ section {
   padding-top: 5px; }
 
 .delivery-wrapper {
-  background: url("../images/map_delivery.png") center fixed no-repeat;
+  background: #dfdfdf;
   background-size: 100%;
-  color: #fff;
+  color: #222222;
   padding-bottom: 80px; }
   .delivery-wrapper .delivery {
     overflow: hidden;
@@ -316,8 +317,6 @@ section {
   .service__head {
     text-align: center;
     margin-bottom: 25px; }
-  .service__form p {
-    padding: 15px 0 10px 0; }
   .service .tabs-first {
     display: -webkit-box;
     display: -webkit-flex;
@@ -407,9 +406,12 @@ section {
 
 .service__form {
   text-align: center; }
+  .service__form form {
+    margin: 22px 0; }
   .service__form p {
-    margin-bottom: 10px;
-    font-family: "Roboto-Medium", sans-serif; }
+    font-family: "Roboto-Light", sans-serif;
+    font-size: 20px;
+    line-height: 22px; }
 
 .cb-form input[type=text] {
   border: 1px solid #222222;
@@ -499,12 +501,9 @@ section {
     width: auto; }
 
 .advantages-wrapper {
-  background: url("../images/advantages.jpg") center fixed no-repeat;
-  background-size: cover;
+  background: #dfdfdf;
   color: #222222;
   font-family: "Roboto-Light", sans-serif; }
-  .advantages-wrapper__bg-layer {
-    background: rgba(0, 0, 0, 0.1); }
   .advantages-wrapper .advantages {
     padding: 50px 0 50px 0; }
     .advantages-wrapper .advantages h2 {
@@ -514,7 +513,7 @@ section {
       text-align: center;
       margin-bottom: 15px; }
   .advantages-wrapper .advantages__item {
-    height: 250px;
+    height: 210px;
     overflow: hidden;
     margin: 15px 0;
     -webkit-transition: all ease .5s;
@@ -527,16 +526,6 @@ section {
       font-family: "Roboto-Thin", sans-serif;
       width: 60%;
       margin: 0 auto; }
-    .advantages-wrapper .advantages__item:hover {
-      color: #fff;
-      background: #484848; }
-      .advantages-wrapper .advantages__item:hover h3:after {
-        background: #1e9dd4;
-        width: 70%;
-        bottom: -15px;
-        margin-left: -35%; }
-      .advantages-wrapper .advantages__item:hover .icon-block i {
-        color: #1e9dd4; }
   .advantages-wrapper .icon-block {
     -webkit-transition: all ease .5s;
     transition: all ease .5s;
@@ -673,7 +662,7 @@ section {
   width: 50px;
   height: 50px;
   color: #fff;
-  background: #1e9dd4;
+  background: #7B519C;
   text-align: center;
   vertical-align: middle;
   position: fixed;
@@ -682,7 +671,7 @@ section {
   font-size: 35px;
   z-index: 11; }
   .to-top a:hover {
-    color: #7B519C; }
+    color: #1e9dd4; }
 
 .cart {
   background: #dfdfdf;
@@ -826,6 +815,39 @@ section {
       background: #1e9dd4;
       color: #fff; }
 
+.videopopup {
+  width: 210px;
+  height: 150px;
+  position: fixed;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  background: #7B519C;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  z-index: 1040;
+  opacity: 0; }
+  .videopopup:hover {
+    background: #61407a; }
+  .videopopup__youtube {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #a07ebc;
+    margin: 17px;
+    border-radius: 50%;
+    text-align: center; }
+    .videopopup__youtube:hover {
+      background: #7ac252; }
+      .videopopup__youtube:hover .fa {
+        color: #7B519C; }
+    .videopopup__youtube .fa {
+      font-size: 20px;
+      padding: 16px 0 0 5px; }
+  .videopopup__thnx {
+    border-bottom: 1px dashed #fff; }
+
 @-webkit-keyframes fadeOutText {
   0% {
     color: transparent; }
@@ -902,9 +924,13 @@ section {
     margin-top: 100px; }
   .slider .slider__text a {
     margin-bottom: 50px; }
-  .header .head-menu li a {
-    padding: 20px 9px;
-    font-size: 18px; } }
+  .header .head-menu {
+    margin-top: 5px; }
+    .header .head-menu li a {
+      padding: 20px 5px;
+      font-size: 15px; }
+  .header .head-menu li a .fa {
+    font-size: 19px; } }
 
 @media screen and (max-width: 1024px) {
   .button {
@@ -1054,7 +1080,7 @@ section {
         border-bottom: 1px solid #fff; }
     .header .cart-wrap {
       width: 50px;
-      top: -291px;
+      top: -361px;
       right: -63px; }
   .advantages-wrapper .advantages__row {
     margin: 0; }
@@ -1080,7 +1106,7 @@ section {
 @media screen and (max-width: 767px) {
   .header .cart-wrap {
     width: 50px;
-    top: -351px;
+    top: -421px;
     right: -133px; }
   .slider, .slider .owl-item {
     height: 650px !important; }
@@ -1194,7 +1220,7 @@ section {
     .cb-form input[type=submit] {
       margin-left: 0;
       margin-top: 5px;
-      width: 50%; }
+      width: 70%; }
   .master-wrapper .first-ul {
     float: none; }
   .footer-wrapper .footer__social ul li a {
