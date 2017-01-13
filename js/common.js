@@ -354,10 +354,9 @@ $(function(){
 			if ( bo < 200 && a == 1) {$(".videopopup").stop().animate({'opacity':'0'},500)};
 		});
 
-		$(".videopopup__thnx").on("click", function(e){
+		$(".videopopup__thnx, .videopopup__youtube").on("click", function(e){
 			e.preventDefault();
 			$(".videopopup").fadeOut("fast");
-
 			setCookie('videopopup', 'true');
 		});
 
