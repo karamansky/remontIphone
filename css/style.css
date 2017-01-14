@@ -72,11 +72,10 @@ section {
   height: 20px !important;
   background: #fff !important;
   opacity: 0.99 !important;
-  border: 3px solid #fff !important; }
+  border: 3px solid #7B519C !important; }
 
 .owl-theme .owl-controls .owl-page.active span {
-  background: #000 !important;
-  border: 3px solid #fff !important; }
+  background: #1e9dd4 !important; }
 
 .icon-cart {
   background: url(../images/icon-cart.png) center no-repeat;
@@ -317,6 +316,9 @@ section {
   .service__head {
     text-align: center;
     margin-bottom: 25px; }
+    .service__head p {
+      padding: 15px 0 0 0;
+      font-size: 22px; }
   .service .tabs-first {
     display: -webkit-box;
     display: -webkit-flex;
@@ -513,7 +515,7 @@ section {
       text-align: center;
       margin-bottom: 15px; }
   .advantages-wrapper .advantages__item {
-    height: 210px;
+    height: 240px;
     overflow: hidden;
     margin: 15px 0;
     -webkit-transition: all ease .5s;
@@ -554,7 +556,7 @@ section {
       font-size: 16px;
       line-height: 20px;
       text-align: center;
-      padding: 0 30px 0 30px; }
+      padding: 35px 50px 0 50px; }
 
 .contacts {
   padding: 50px 0 86px 0; }
@@ -965,8 +967,6 @@ section {
     transform: translateX(0%); } }
 
 @media (min-width: 1200px) {
-  .slider .slider__text .slide2__btn {
-    margin-top: 50px; }
   .slider .slider__text .text__body ul {
     margin-top: 25px; } }
 
@@ -1292,8 +1292,6 @@ section {
     height: 15px !important; }
   .slider, .slider .owl-item {
     height: 510px !important; }
-  .slider .slide2__btn {
-    margin-bottom: 30px !important; }
   .slider .slide2__img {
     display: none; }
   .slider .slider1__img {

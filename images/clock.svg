@@ -1,0 +1,33 @@
+<svg id="5a1aa151-1327-4c5d-a525-0c627464d846" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.75 30.35">
+  <defs>
+    <style>
+      .\32 bb6ae30-9e8b-4145-b814-f8afc988a7fd, .\39 e504244-2908-46c9-896c-aa1184616536, .a3f2addf-e1f7-45f6-9732-9eb1448107d4 {
+        fill: none;
+        stroke: #7b519c;
+      }
+
+      .\32 bb6ae30-9e8b-4145-b814-f8afc988a7fd, .a3f2addf-e1f7-45f6-9732-9eb1448107d4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .\32 bb6ae30-9e8b-4145-b814-f8afc988a7fd {
+        stroke-width: 0.89px;
+      }
+
+      .\39 e504244-2908-46c9-896c-aa1184616536 {
+        stroke-miterlimit: 22.93;
+      }
+    </style>
+  </defs>
+  <title>clock</title>
+  <path class="a3f2addf-e1f7-45f6-9732-9eb1448107d4" d="M94.72,45.76a14.92,14.92,0,1,1,18.71-14.43" transform="translate(-83.07 -15.91)"/>
+  <line class="2bb6ae30-9e8b-4145-b814-f8afc988a7fd" x1="23.18" y1="8.01" x2="16.79" y2="14.4"/>
+  <line class="a3f2addf-e1f7-45f6-9732-9eb1448107d4" x1="15.57" y1="17.17" x2="15.56" y2="27.32"/>
+  <line class="a3f2addf-e1f7-45f6-9732-9eb1448107d4" x1="13.81" y1="14.69" x2="8.25" y2="11.49"/>
+  <path class="9e504244-2908-46c9-896c-aa1184616536" d="M98.5,29.64a1.68,1.68,0,1,0,1.69,1.68,1.68,1.68,0,0,0-1.69-1.68h0Z" transform="translate(-83.07 -15.91)"/>
+  <line class="a3f2addf-e1f7-45f6-9732-9eb1448107d4" x1="15.43" y1="4.09" x2="15.43" y2="5.13"/>
+  <line class="a3f2addf-e1f7-45f6-9732-9eb1448107d4" x1="4.09" y1="15.42" x2="5.14" y2="15.42"/>
+  <line class="a3f2addf-e1f7-45f6-9732-9eb1448107d4" x1="26.65" y1="15.35" x2="27.7" y2="15.35"/>
+  <polyline class="a3f2addf-e1f7-45f6-9732-9eb1448107d4" points="33.24 11.49 30.68 16.88 26.98 12.2"/>
+</svg>

@@ -309,7 +309,7 @@ $(function(){
 		$('.owl-carousel').owlCarousel({
 			singleItem 				: true,
 			itemClass					: ".item-owl",
-			autoPlay					: 8000,
+			// autoPlay					: 8000,
 			pagination				: true,
 			paginationSpeed 	: 800,
 			rewindSpeed 			: 800,
@@ -350,8 +350,8 @@ $(function(){
 		$(window).scroll(function(){
 			var bo = $(this).scrollTop();
 			var a = $(".videopopup").css('opacity')
-			if ( bo >= 200 && a == 0) {$(".videopopup").stop().animate({'opacity':'1'},500)};
-			if ( bo < 200 && a == 1) {$(".videopopup").stop().animate({'opacity':'0'},500)};
+			if ( bo >= 600 && a == 0) {$(".videopopup").stop().animate({'opacity':'1'},500)};
+			if ( bo < 600 && a == 1) {$(".videopopup").stop().animate({'opacity':'0'},500)};
 		});
 
 		$(".videopopup__thnx, .videopopup__youtube").on("click", function(e){
