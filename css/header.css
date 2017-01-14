@@ -265,6 +265,8 @@ section {
       background: #1e9dd4;
       color: #fff; }
   .slider .slider__text .slide2__btn {
+    margin-top: 50px; }
+  .slider .slider__text .slide2__btn1 {
     margin-top: 380px;
     float: right; }
   .slider .slider__text .slide2__btn2 {
@@ -300,8 +302,7 @@ section {
   .slider .slider__img {
     margin-top: 160px; }
   .slider .slider__img.slide3__img {
-    margin-top: 100px;
-    height: 570px; }
+    margin-top: 100px; }
   .slider .slide {
     background: rgba(0, 0, 0, 0.5); }
   .slider .slide1-wrap {
@@ -311,7 +312,7 @@ section {
     background: url(../images/slide2.jpg) center no-repeat;
     background-size: cover; }
   .slider .slide3-wrap {
-    background: #fff url(../images/slide3-img.png) center no-repeat;
+    background: #fff url(../images/slide3-img.png) center 100px no-repeat;
     background-size: 90%; }
     .slider .slide3-wrap .slider__text {
       height: 600px; }
