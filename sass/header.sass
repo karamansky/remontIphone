@@ -217,10 +217,10 @@
 			
 		a
 			display: block
-			width: 350px
+			width: 260px
 			border: 1px solid #fff
-			padding: 7px 25px 5px 25px
-			font-size: 28px
+			padding: 5px 15px 5px 15px
+			font-size: 22px
 			font-family: $thin
 			text-align: center
 			text-transform: uppercase
@@ -233,8 +233,27 @@
 				background: $blue-color
 				color: #fff
 
+		.text__h
+			margin: 140px 0
+			overflow: hidden
+			h2
+				display: inline-block
+				padding: 5px 25px
+				margin: 5px 0
+				&:nth-child(1)
+					background: #000
+
+				&:nth-child(2)
+					background: $viber-color
+
+				&:nth-child(3)
+					background: $blue-color
+
+				&:nth-child(5)
+					background: $green-color
+
 		.slide2__btn
-			margin-top: 50px
+			margin-top: 30px
 
 		.slide2__btn1
 			margin-top: 380px
@@ -281,10 +300,17 @@
 
 	.slider__img.slide3__img
 		margin-top: 100px
-		//height: 600px
+
+	.slider__img.slide1__img
+		margin-top: 50px
 
 	.slide
 		background: rgba(0, 0, 0, .5)
+
+	.slide0-wrap
+		//background: #706d6d
+		background: url(../images/slide0.jpg) center no-repeat
+		background-size: cover
 
 	.slide1-wrap
 		background: url(../images/slide1.jpg) center no-repeat
@@ -297,8 +323,6 @@
 	.slide3-wrap
 		background: #fff url(../images/slide3-img.png) center 100px no-repeat
 		background-size: 90%
-
-
 		.slider__text
 			height: 600px
 
