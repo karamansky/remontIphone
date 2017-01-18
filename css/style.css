@@ -379,6 +379,15 @@ section {
     width: 100%;
     margin-right: 0;
     margin-top: 0.2rem; }
+  .service .tabhead {
+    text-align: center;
+    margin-bottom: 15px; }
+    .service .tabhead h3 {
+      display: inline-block;
+      background: #1e9dd4;
+      color: #fff;
+      width: 110px;
+      padding: 7px 12px; }
   .service .tabs {
     width: 100%;
     margin: 10px auto;
@@ -388,7 +397,7 @@ section {
     overflow: hidden;
     display: inline-block; }
     .service .tab-buttons1 span, .service .tab-buttons2 span {
-      padding: 3px 10px;
+      padding: 3px 7px;
       margin: 0 10px;
       color: #333;
       cursor: pointer;
@@ -573,7 +582,7 @@ section {
     margin-left: 10px;
     margin-bottom: 10px; }
   .contacts form input[type=text] {
-    background-color: #ebebeb; }
+    background-color: #dfdfdf; }
   .contacts .contacts__map {
     padding-top: 15px; }
     .contacts .contacts__map .contacts__streetview {
