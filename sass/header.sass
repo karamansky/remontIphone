@@ -140,7 +140,14 @@
 		padding-top: 10px
 		transition: all .4s
 		span
+			font-size: 16px
 			color: #fff
+			i.fa-volume-control-phone
+				color: lighten($viber-color, 20%)
+			i.fa-whatsapp
+				color: $green-color
+			i.fa-telegram
+				color: lighten($blue-color, 20%)
 		a
 			margin-top: 5px
 			border: none
@@ -193,6 +200,28 @@
 	z-index: 1
 	.owl-item
 		height: 630px!important
+
+	.slider__text a, .slider__img a
+		display: block
+		width: 260px
+		border: 1px solid #fff
+		padding: 5px 15px 5px 15px
+		font-size: 22px
+		font-family: $thin
+		text-align: center
+		text-transform: uppercase
+		//border-radius: 6px
+		transition: all .4s
+		margin-top: 50px
+		margin-bottom: 120px
+		background: $viber-color
+		&:hover
+			background: $blue-color
+			color: #fff
+
+	.slider__img a
+		width: 320px
+
 	.slider__text
 		h2
 			color: #fff
@@ -215,26 +244,7 @@
 			font-weight: 100
 			font-size: 24px
 			
-		a
-			display: block
-			width: 260px
-			border: 1px solid #fff
-			padding: 5px 15px 5px 15px
-			font-size: 22px
-			font-family: $thin
-			text-align: center
-			text-transform: uppercase
-			border-radius: 6px
-			transition: all .4s
-			margin-top: 50px
-			margin-bottom: 120px
-			background: $viber-color
-			&:hover
-				background: $blue-color
-				color: #fff
-
 		.text__h
-			margin: 140px 0
 			overflow: hidden
 			h2
 				display: inline-block
@@ -319,6 +329,7 @@
 	.slide2-wrap
 		background: url(../images/slide2.jpg) center no-repeat
 		background-size: cover
+		padding: 140px 0
 
 	.slide3-wrap
 		background: #fff url(../images/slide3-img.png) center 100px no-repeat

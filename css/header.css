@@ -176,7 +176,14 @@ section {
     -webkit-transition: all .4s;
     transition: all .4s; }
     .header .header__callback span {
+      font-size: 16px;
       color: #fff; }
+      .header .header__callback span i.fa-volume-control-phone {
+        color: #ad8ec5; }
+      .header .header__callback span i.fa-whatsapp {
+        color: #7ac252; }
+      .header .header__callback span i.fa-telegram {
+        color: #6ec5ea; }
     .header .header__callback a {
       margin-top: 5px;
       border: none;
@@ -228,6 +235,25 @@ section {
   z-index: 1; }
   .slider .owl-item {
     height: 630px !important; }
+  .slider .slider__text a, .slider .slider__img a {
+    display: block;
+    width: 260px;
+    border: 1px solid #fff;
+    padding: 5px 15px 5px 15px;
+    font-size: 22px;
+    font-family: "Roboto-Thin", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    background: #7B519C; }
+    .slider .slider__text a:hover, .slider .slider__img a:hover {
+      background: #1e9dd4;
+      color: #fff; }
+  .slider .slider__img a {
+    width: 320px; }
   .slider .slider__text h2 {
     color: #fff;
     font-family: "Roboto-Thin", sans-serif;
@@ -246,26 +272,7 @@ section {
     font-family: "Roboto-Thin", sans-serif;
     font-weight: 100;
     font-size: 24px; }
-  .slider .slider__text a {
-    display: block;
-    width: 260px;
-    border: 1px solid #fff;
-    padding: 5px 15px 5px 15px;
-    font-size: 22px;
-    font-family: "Roboto-Thin", sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 6px;
-    -webkit-transition: all .4s;
-    transition: all .4s;
-    margin-top: 50px;
-    margin-bottom: 120px;
-    background: #7B519C; }
-    .slider .slider__text a:hover {
-      background: #1e9dd4;
-      color: #fff; }
   .slider .slider__text .text__h {
-    margin: 140px 0;
     overflow: hidden; }
     .slider .slider__text .text__h h2 {
       display: inline-block;
@@ -330,7 +337,8 @@ section {
     background-size: cover; }
   .slider .slide2-wrap {
     background: url(../images/slide2.jpg) center no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    padding: 140px 0; }
   .slider .slide3-wrap {
     background: #fff url(../images/slide3-img.png) center 100px no-repeat;
     background-size: 90%; }
