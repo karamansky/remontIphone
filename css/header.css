@@ -172,18 +172,21 @@ section {
     padding: 20px 0 20px 10px; }
   .header .header__callback {
     text-align: right;
-    padding-top: 10px;
+    padding-top: 20px;
     -webkit-transition: all .4s;
     transition: all .4s; }
     .header .header__callback span {
-      font-size: 16px;
+      font-size: 20px;
+      font-family: "Roboto-Medium", sans-serif;
       color: #fff; }
+      .header .header__callback span i {
+        font-size: 25px; }
       .header .header__callback span i.fa-volume-control-phone {
-        color: #ad8ec5; }
+        color: #b295c8; }
       .header .header__callback span i.fa-whatsapp {
         color: #7ac252; }
       .header .header__callback span i.fa-telegram {
-        color: #6ec5ea; }
+        color: #84ceee; }
     .header .header__callback a {
       margin-top: 5px;
       border: none;
@@ -276,16 +279,20 @@ section {
     overflow: hidden; }
     .slider .slider__text .text__h h2 {
       display: inline-block;
-      padding: 5px 25px;
-      margin: 5px 0; }
-      .slider .slider__text .text__h h2:nth-child(1) {
-        background: #000; }
-      .slider .slider__text .text__h h2:nth-child(2) {
-        background: #7B519C; }
-      .slider .slider__text .text__h h2:nth-child(3) {
-        background: #1e9dd4; }
-      .slider .slider__text .text__h h2:nth-child(5) {
-        background: #7ac252; }
+      padding: 12px 25px;
+      line-height: 1;
+      margin: 5px 0;
+      font-size: 55px; }
+    .slider .slider__text .text__h .first {
+      background: #606060; }
+    .slider .slider__text .text__h .secont {
+      background: #7B519C; }
+    .slider .slider__text .text__h .third {
+      background: #1e9dd4; }
+    .slider .slider__text .text__h .fours {
+      background: #7ac252; }
+    .slider .slider__text .text__h .fifth {
+      background: #ff3333; }
   .slider .slider__text .slide2__btn {
     margin-top: 30px; }
   .slider .slider__text .slide2__btn1 {
@@ -338,7 +345,7 @@ section {
   .slider .slide2-wrap {
     background: url(../images/slide2.jpg) center no-repeat;
     background-size: cover;
-    padding: 140px 0; }
+    padding: 120px 0; }
   .slider .slide3-wrap {
     background: #fff url(../images/slide3-img.png) center 100px no-repeat;
     background-size: 90%; }

@@ -137,17 +137,20 @@
 
 	.header__callback
 		text-align: right
-		padding-top: 10px
+		padding-top: 20px
 		transition: all .4s
 		span
-			font-size: 16px
+			font-size: 20px
+			font-family: $medium
 			color: #fff
+			i
+				font-size: 25px
 			i.fa-volume-control-phone
-				color: lighten($viber-color, 20%)
+				color: lighten($viber-color, 22%)
 			i.fa-whatsapp
 				color: $green-color
 			i.fa-telegram
-				color: lighten($blue-color, 20%)
+				color: lighten($blue-color, 25%)
 		a
 			margin-top: 5px
 			border: none
@@ -210,7 +213,6 @@
 		font-family: $thin
 		text-align: center
 		text-transform: uppercase
-		//border-radius: 6px
 		transition: all .4s
 		margin-top: 50px
 		margin-bottom: 120px
@@ -248,19 +250,24 @@
 			overflow: hidden
 			h2
 				display: inline-block
-				padding: 5px 25px
+				padding: 12px 25px
+				line-height: 1
 				margin: 5px 0
-				&:nth-child(1)
-					background: #000
+				font-size: 55px
+			.first
+				background: darken($grey-bg-color, 50%)
 
-				&:nth-child(2)
-					background: $viber-color
+			.secont
+				background: $viber-color
 
-				&:nth-child(3)
-					background: $blue-color
+			.third
+				background: $blue-color
 
-				&:nth-child(5)
-					background: $green-color
+			.fours
+				background: $green-color
+
+			.fifth
+				background: lighten(#ff0000, 10%)
 
 		.slide2__btn
 			margin-top: 30px
@@ -329,7 +336,7 @@
 	.slide2-wrap
 		background: url(../images/slide2.jpg) center no-repeat
 		background-size: cover
-		padding: 140px 0
+		padding: 120px 0
 
 	.slide3-wrap
 		background: #fff url(../images/slide3-img.png) center 100px no-repeat

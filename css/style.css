@@ -294,7 +294,7 @@ section {
       line-height: 18px; }
 
 .service-wrapper {
-  background: #ebebeb;
+  background: #dfdfdf;
   position: relative;
   z-index: 1;
   padding-bottom: 50px;
@@ -334,7 +334,6 @@ section {
     order: 1;
     display: block;
     padding: 5px 0;
-    width: 112px;
     text-align: center;
     margin-right: 0.2rem;
     cursor: pointer;
@@ -383,11 +382,15 @@ section {
     text-align: center;
     margin-bottom: 15px; }
     .service .tabhead h3 {
-      display: inline-block;
-      background: #1e9dd4;
-      color: #fff;
-      width: 110px;
-      padding: 7px 12px; }
+      display: block;
+      color: #222222;
+      border-bottom: 2px solid #d7d7d7; }
+  .service .left.tabhead h3 {
+    text-align: right;
+    padding: 7px 12px 7px 0; }
+  .service .right.tabhead h3 {
+    text-align: left;
+    padding: 7px 0px 7px 12px; }
   .service .tabs {
     width: 100%;
     margin: 10px auto;
@@ -397,19 +400,25 @@ section {
     overflow: hidden;
     display: inline-block; }
     .service .tab-buttons1 span, .service .tab-buttons2 span {
-      padding: 3px 7px;
-      margin: 0 10px;
+      padding: 0px 5px 5px 5px;
+      margin: 0 4px 4px 4px;
       color: #333;
       cursor: pointer;
-      border-bottom: 2px solid #ddd;
+      border: 2px solid #d7d7d7;
+      border-radius: 5px;
       display: block;
       width: auto;
       float: left;
       text-align: center;
-      height: 40px;
-      line-height: 40px; }
+      height: 30px;
+      min-width: 30px;
+      line-height: 30px; }
+      .service .tab-buttons1 span:first-child, .service .tab-buttons2 span:first-child {
+        margin-left: 0; }
+      .service .tab-buttons1 span:last-child, .service .tab-buttons2 span:last-child {
+        margin-right: 0; }
     .service .tab-buttons1 span.active, .service .tab-buttons1 span:hover, .service .tab-buttons2 span.active, .service .tab-buttons2 span:hover {
-      border-bottom: 2px solid #7B519C; }
+      border: 2px solid #7B519C; }
   .service .tab-content1, .service .tab-content2 {
     padding: 15px;
     display: inline-block;
@@ -459,7 +468,6 @@ section {
 .tab-content1, .tab-content2 {
   overflow: hidden; }
   .tab-content1 .tab-content__left, .tab-content1 .tab-content__right, .tab-content2 .tab-content__left, .tab-content2 .tab-content__right {
-    padding-top: 25px;
     float: left; }
     .tab-content1 .tab-content__left img, .tab-content1 .tab-content__right img, .tab-content2 .tab-content__left img, .tab-content2 .tab-content__right img {
       display: none;
@@ -569,7 +577,10 @@ section {
 
 .contacts {
   padding: 50px 0 86px 0; }
+  .contacts .contacts__head {
+    text-align: center; }
   .contacts h2 {
+    text-align: center;
     font-size: 34px;
     line-height: 50px;
     text-transform: uppercase; }
@@ -609,13 +620,17 @@ section {
       padding: 30px 0; }
 
 .footer-wrapper {
-  padding: 20px;
-  background: #000;
-  color: #fff; }
+  background: url("../images/footer_bg.jpg") top center no-repeat;
+  background-size: cover; }
+  .footer-wrapper .footer {
+    padding: 50px 20px 100px 20px;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff; }
   .footer-wrapper .footer__logo {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 80px; }
   .footer-wrapper .footer__phones {
-    padding: 40px 0;
+    padding: 50px 0;
     overflow: hidden; }
   .footer-wrapper .phones__item {
     text-align: center; }
@@ -624,6 +639,8 @@ section {
       .footer-wrapper .phones__item a:hover {
         border-bottom: none;
         cursor: pointer; }
+    .footer-wrapper .phones__item h4 {
+      margin-bottom: 30px; }
   .footer-wrapper .footer__copy {
     text-align: center;
     position: relative; }
@@ -1036,8 +1053,9 @@ section {
         transition: all .4s; }
     .headhesive--stick .head-menu li a {
       display: block;
-      padding: 15px 5px;
+      padding: 15px 5px 15px 5px;
       font-family: "Roboto-Thin", sans-serif;
+      line-height: 1.9;
       font-size: 16px;
       -webkit-transition: all .4s;
       transition: all .4s; }
@@ -1064,7 +1082,7 @@ section {
         width: 100px;
         padding: 4px 0; }
     .headhesive--stick .cart-wrap {
-      padding-top: 4px;
+      padding-top: 10px;
       margin-bottom: -5px; }
       .headhesive--stick .cart-wrap .cart-wrap__count {
         top: 5px; }
@@ -1130,7 +1148,7 @@ section {
       float: left;
       font-family: "Roboto-Bold", sans-serif;
       font-size: 15px;
-      background: #7B519C;
+      background: #ff0000;
       width: 20px;
       height: 20px;
       padding: 0;
@@ -1172,6 +1190,8 @@ section {
     display: block !important; } }
 
 @media screen and (max-width: 767px) {
+  .phone-hide {
+    display: none; }
   .header .cart-wrap {
     width: 50px;
     top: -421px;
@@ -1202,8 +1222,6 @@ section {
     width: 30% !important; }
   .slider .slider__text .text__head {
     text-align: center; }
-  .phone-hide {
-    display: none; }
   .section-head {
     width: 100%; }
   .slider .slider__text h2 {

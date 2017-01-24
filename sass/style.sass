@@ -271,7 +271,7 @@
 
 //**************service
 .service-wrapper
-	background: $grey-color
+	background: $grey-bg-color
 	position: relative
 	z-index: 1
 	padding-bottom: 50px
@@ -305,7 +305,7 @@
 		order: 1  // Put the labels first
 		display: block
 		padding: 5px 0
-		width: 112px
+		//width: 112px
 		text-align: center
 		margin-right: 0.2rem
 		cursor: pointer
@@ -318,7 +318,6 @@
 	#first-tab
 		margin-left: calc(50% - 114px)
 
- 
 	.tabs-first .tab
 		order: 99  // Put the tabs last
 		flex-grow: 1
@@ -355,12 +354,16 @@
 		text-align: center
 		margin-bottom: 15px
 		h3
-			display: inline-block
-			background: $blue-color
-			color: #fff
-			width: 110px
-			padding: 7px 12px
+			display: block
+			color: $text-color
+			border-bottom: 2px solid darken($grey-bg-color, 3%)
+	.left.tabhead h3
+		text-align: right
+		padding: 7px 12px 7px 0
 
+	.right.tabhead h3
+		text-align: left
+		padding: 7px 0px 7px 12px
 
 	.tabs
 		width: 100%
@@ -374,20 +377,26 @@
 
 
 		span
-			padding: 3px 7px
-			margin: 0 10px
+			padding: 0px 5px 5px 5px
+			margin: 0 4px 4px 4px
 			color: #333
 			cursor: pointer
-			border-bottom: 2px solid #ddd
+			border: 2px solid darken($grey-bg-color, 3%)
+			border-radius: 5px
 			display: block
 			width: auto
 			float: left
 			text-align: center
-			height: 40px
-			line-height: 40px
+			height: 30px
+			min-width: 30px
+			line-height: 30px
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
 
 		span.active, span:hover
-			border-bottom: 2px solid $viber-color
+			border: 2px solid $viber-color
 
 	 
 	.tab-content1, .tab-content2
@@ -444,7 +453,6 @@
 	overflow: hidden
 
 	.tab-content__left, .tab-content__right
-		padding-top: 25px
 		float: left
 
 		img
@@ -580,8 +588,11 @@
 //**************contacts
 .contacts
 	padding: 50px 0 86px 0
+	.contacts__head
+		text-align: center
 
 	h2
+		text-align: center
 		font-size: 34px
 		line-height: 50px
 		text-transform: uppercase
@@ -635,15 +646,19 @@
 
 //**************footer
 .footer-wrapper
-	padding: 20px
-	background: #000
-	color: #fff
+	background: url("../images/footer_bg.jpg") top center no-repeat
+	background-size: cover
+	.footer
+		padding: 50px 20px 100px 20px
+		background: rgba(0,0,0,.55)
+		color: #fff
 
 	.footer__logo
 		text-align: center
+		margin-bottom: 80px
 
 	.footer__phones
-		padding: 40px 0
+		padding: 50px 0
 		overflow: hidden
 	.phones__item
 		text-align: center
@@ -652,6 +667,9 @@
 			&:hover
 				border-bottom: none
 				cursor: pointer
+
+		h4
+			margin-bottom: 30px
 
 	.footer__copy
 		text-align: center

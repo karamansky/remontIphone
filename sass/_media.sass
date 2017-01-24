@@ -74,8 +74,9 @@
 		.head-menu
 			li a
 				display: block
-				padding: 15px 5px
+				padding: 15px 5px 15px 5px
 				font-family: $thin
+				line-height: 1.9
 				font-size: 16px
 				transition: all .4s
 				&:hover
@@ -104,7 +105,7 @@
 				padding: 4px 0
 
 		.cart-wrap
-			padding-top: 4px
+			padding-top: 10px
 			margin-bottom: -5px
 			.cart-wrap__count
 				top: 5px
@@ -192,7 +193,7 @@
 			float: left
 			font-family: $bold
 			font-size: 15px
-			background: $viber-color
+			background: #ff0000
 			width: 20px
 			height: 20px
 			padding: 0
@@ -246,6 +247,8 @@
 
 
 @media screen and (max-width: $phone) //768
+	.phone-hide
+		display: none
 
 	.header .cart-wrap
 		width: 50px
@@ -283,9 +286,6 @@
 
 	.slider .slider__text .text__head
 		text-align: center
-
-	.phone-hide
-		display: none
 
 	.section-head
 		width: 100%

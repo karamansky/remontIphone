@@ -283,8 +283,8 @@ $(function(){
 				}
 			});
 			var activeClass = $("#lamp1").attr("class");
-			$('.tab-buttons1 span').css("border-bottom", "2px solid #ddd");
-			$('.tab-buttons1 span.'+ activeClass).css("border-bottom", "2px solid #7B519C");
+			$('.tab-buttons1 span').css("border", "2px solid #d7d7d7");
+			$('.tab-buttons1 span.'+ activeClass).css("border", "2px solid #7B519C");
 		});
 		// $('.tab-content2 > div').hide();
 		// $('.tab-content2 > div').first().slideDown();
@@ -309,10 +309,10 @@ $(function(){
 		$('.owl-carousel').owlCarousel({
 			singleItem 				: true,
 			itemClass					: ".item-owl",
-			// autoPlay					: 8000,
+			autoPlay					: 8000,
 			pagination				: true,
-			paginationSpeed 	: 800,
-			rewindSpeed 			: 800,
+			paginationSpeed 	: 5000,
+			rewindSpeed 			: 1000,
 			autoplayHoverPause: true
 		});
 
