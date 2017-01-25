@@ -3,10 +3,17 @@
 $(function(){
 
 	$(document).ready(function(){
-
 		if(getCookie("videopopup") != undefined){
 			$(".videopopup").css("display","none");
 		}
+
+		//скрываем описание ремонта, если нет цены
+		$("#service span.service-price").each( function(){
+			if($(this).html() == "----"){
+				$(this).parent().parent().hide();
+			}
+		});
+
 
 		//open menu icon
 		$(document).on('click','#open-menu',function(){

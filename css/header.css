@@ -269,7 +269,7 @@ section {
   .slider .slider__text h3 {
     color: #fff;
     font-size: 35px;
-    line-height: 50px; }
+    line-height: 40px; }
   .slider .slider__text h4 {
     color: #ffffff;
     font-family: "Roboto-Thin", sans-serif;
@@ -323,7 +323,7 @@ section {
       .slider .slider__text .text__body ul li {
         color: #ffffff;
         font-family: "Roboto-Thin", sans-serif;
-        font-size: 22px;
+        font-size: 20px;
         list-style-image: url("../images/list-style-circle.svg");
         list-style-position: outside; }
         .slider .slider__text .text__body ul li span {
@@ -335,7 +335,7 @@ section {
   .slider .slider__img.slide1__img {
     margin-top: 50px; }
   .slider .slide {
-    background: rgba(0, 0, 0, 0.5); }
+    background: rgba(0, 0, 0, 0.55); }
   .slider .slide0-wrap {
     background: url(../images/slide0.jpg) center no-repeat;
     background-size: cover; }
