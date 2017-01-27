@@ -294,7 +294,8 @@ section {
       line-height: 18px; }
 
 .service-wrapper {
-  background: #dfdfdf;
+  background: #fff url("../images/iphone-crash.jpg") right bottom no-repeat;
+  background-size: 55%;
   position: relative;
   z-index: 1;
   padding-bottom: 50px;
@@ -438,7 +439,7 @@ section {
   width: 285px;
   padding: 7px 5px 7px 50px;
   color: #222222;
-  background: #fff url("../images/icon_phone.png") 5px 4px no-repeat;
+  background: #ebebeb url("../images/icon_phone.png") 5px 4px no-repeat;
   font-size: 16px; }
   .cb-form input[type=text]::-webkit-input-placeholder {
     color: #222222;
@@ -518,6 +519,101 @@ section {
   .master-wrapper input[type=submit] {
     padding: 7px 12px;
     width: auto; }
+
+.howwork-wrapper {
+  padding: 50px 0; }
+  .howwork-wrapper h2 {
+    text-align: center; }
+  .howwork-wrapper .btn {
+    border: none;
+    background: #7B519C;
+    color: #fff;
+    font-family: "Roboto-Thin", sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    padding: 7px 12px;
+    margin-top: 5px;
+    text-transform: uppercase; }
+    .howwork-wrapper .btn:hover {
+      background: #1e9dd4; }
+  .howwork-wrapper .howwork .wrap {
+    height: 800px;
+    overflow: hidden; }
+  .howwork-wrapper .hww h2 {
+    margin-bottom: 40px; }
+  .howwork-wrapper .hww .wrap {
+    position: relative;
+    height: 800px; }
+  .howwork-wrapper .hww_img {
+    width: 628px;
+    height: 713px;
+    background: url(../images/hww_img.png) no-repeat center;
+    margin: 80px 0 0 50px;
+    z-index: 1; }
+  .howwork-wrapper .hww_one {
+    position: absolute;
+    width: 280px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    z-index: 2; }
+  .howwork-wrapper .hww_nmbr {
+    margin: 0 auto 17px auto;
+    width: 54px;
+    height: 54px;
+    line-height: 52px;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px -1px 1px #333;
+    background: #7B519C;
+    border-radius: 50%; }
+  .howwork-wrapper .hww_one span {
+    display: block;
+    color: #1e9dd4;
+    font-size: 20px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-family: "Roboto-Medium", sans-serif; }
+  .howwork-wrapper .hww_one .bttn {
+    margin: 13px auto 0 auto;
+    display: block; }
+  .howwork-wrapper .h1 {
+    top: 80px;
+    left: 550px; }
+  .howwork-wrapper .h2 {
+    top: 240px;
+    right: 100px; }
+  .howwork-wrapper .h3 {
+    top: 460px;
+    right: -15px;
+    width: 280px; }
+  .howwork-wrapper .h4 {
+    top: 670px;
+    right: 120px; }
+  .howwork-wrapper .hww_line {
+    position: absolute;
+    z-index: 1; }
+  .howwork-wrapper .hl1 {
+    width: 190px;
+    height: 170px;
+    top: 75px;
+    right: 258px;
+    background: url(../images/hl1.png) no-repeat center; }
+  .howwork-wrapper .hl2 {
+    width: 186px;
+    height: 207px;
+    top: 270px;
+    right: 24px;
+    background: url(../images/hl2.png) no-repeat center; }
+  .howwork-wrapper .hl3 {
+    width: 119px;
+    height: 184px;
+    top: 481px;
+    right: 175px;
+    background: url(../images/hl3.png) no-repeat center; }
 
 .advantages-wrapper {
   background: #dfdfdf;

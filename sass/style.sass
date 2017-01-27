@@ -271,7 +271,9 @@
 
 //**************service
 .service-wrapper
-	background: $grey-bg-color
+	//background: $grey-bg-color
+	background: #fff url("../images/iphone-crash.jpg") right bottom no-repeat
+	background-size: 55%
 	position: relative
 	z-index: 1
 	padding-bottom: 50px
@@ -421,7 +423,7 @@
 		width: 285px
 		padding: 7px 5px 7px 50px
 		color: $text-color
-		background: #fff url("../images/icon_phone.png") 5px 4px no-repeat
+		background: $grey-color url("../images/icon_phone.png") 5px 4px no-repeat
 		&::-webkit-input-placeholder
 			color: $text-color
 			font-size: 16px
@@ -517,6 +519,130 @@
 		width: auto
 
 //**************end master
+
+
+
+//**************howwork
+.howwork-wrapper
+	padding: 50px 0
+
+	h2
+		text-align: center
+
+	.btn
+		border: none
+		background: $viber-color
+		color: #fff
+		font-family: $thin
+		font-size: 16px
+		display: inline-block
+		padding: 7px 12px
+		margin-top: 5px
+		text-transform: uppercase
+		&:hover
+			background: $blue-color
+
+	.howwork
+
+		.wrap
+			height: 800px
+			overflow: hidden
+
+	.hww h2
+		margin-bottom: 40px
+
+	.hww .wrap
+		position: relative
+		height: 800px
+
+	.hww_img
+		width: 628px
+		height: 713px
+		background: url(../images/hww_img.png) no-repeat center
+		margin: 80px 0 0 50px
+		z-index: 1
+
+
+	.hww_one
+		position: absolute
+		width: 280px
+		text-align: center
+		font-size: 16px
+		line-height: 20px
+		z-index: 2
+
+
+	.hww_nmbr
+		margin: 0 auto 17px auto
+		width: 54px
+		height: 54px
+		line-height: 52px
+		font-family: $medium
+		font-size: 28px
+		color: #fff
+		text-align: center
+		text-shadow: 0px -1px 1px #333
+		background: $viber-color
+		border-radius: 50%
+
+
+	.hww_one span
+		display: block
+		color: $blue-color
+		font-size: 20px
+		line-height: 16px
+		text-transform: uppercase
+		margin-bottom: 8px
+		font-family: $medium
+
+
+	.hww_one .bttn
+		margin: 13px auto 0 auto
+		display: block
+
+	.h1
+		top: 80px
+		left: 550px
+
+	.h2
+		top: 240px
+		right: 100px
+
+	.h3
+		top: 460px
+		right: -15px
+		width: 280px
+
+	.h4
+		top: 670px
+		right: 120px
+
+	.hww_line
+		position: absolute
+		z-index: 1
+
+	.hl1
+		width: 190px
+		height: 170px
+		top: 75px
+		right: 258px
+		background: url(../images/hl1.png) no-repeat center
+
+	.hl2
+		width: 186px
+		height: 207px
+		top: 270px
+		right: 24px
+		background: url(../images/hl2.png) no-repeat center
+
+	.hl3
+		width: 119px
+		height: 184px
+		top: 481px
+		right: 175px
+		background: url(../images/hl3.png) no-repeat center
+
+//**************end howwork
 
 
 
