@@ -316,7 +316,7 @@ $(function(){
 		$('.owl-carousel').owlCarousel({
 			singleItem 				: true,
 			itemClass					: ".item-owl",
-			autoPlay					: 8000,
+			// autoPlay					: 8000,
 			pagination				: true,
 			paginationSpeed 	: 5000,
 			rewindSpeed 			: 1000,

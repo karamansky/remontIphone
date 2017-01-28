@@ -707,7 +707,7 @@ section {
   background: #646464 url("../images/diagnostic.jpg") center no-repeat;
   background-size: cover; }
   .diagnostic-wrapper .diagnostic {
-    padding: 150px;
+    padding: 150px 0;
     background: rgba(0, 0, 0, 0.55);
     color: #fff;
     text-align: center; }
@@ -1238,8 +1238,44 @@ section {
         font-size: 36px; } }
 
 @media screen and (max-width: 992px) {
+  .to-top {
+    right: 50px;
+    bottom: 50px; }
+  .slider .slider__text .text__head {
+    margin-top: 80px; }
+  .slider .slider__text h3 {
+    font-size: 25px;
+    line-height: 1.1; }
+  .slider .slider__text .slide2__btn1,
+  .slider .slider__text .slide2__btn2 {
+    margin-top: 240px; }
+  .slider .slider__text .slide2__btn {
+    margin-top: 10px; }
+  .slider .slider__text .text__h h2 {
+    font-size: 24px; }
+  .service h2 {
+    font-size: 30px; }
+  .service .tab-content1 .tab-content__left table td,
+  .service .tab-content1 .tab-content__right table td {
+    padding: 0; }
+    .service .tab-content1 .tab-content__left table td:first-child,
+    .service .tab-content1 .tab-content__right table td:first-child {
+      padding-right: 5px; }
+  .howwork-wrapper .h1 {
+    left: 150px; }
+  .howwork-wrapper .hww_img {
+    width: 400px;
+    height: 550px;
+    margin: 180px 0 0 0px;
+    background-size: 100%; }
   .header-wrap {
     display: none; }
+  .header .logo a {
+    background: none; }
+  .header__callback span {
+    margin-right: 30px; }
+    .header__callback span .fa {
+      display: none; }
   .store__items .store__item img {
     max-width: 195px; }
   .store__items .sItem__img {
@@ -1295,11 +1331,12 @@ section {
     .header .cart-wrap__count {
       float: left;
       font-family: "Roboto-Bold", sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       background: #ff0000;
       width: 20px;
       height: 20px;
       padding: 0;
+      border: 1px solid #dfdfdf;
       border-radius: 50%;
       text-align: center;
       position: absolute;
@@ -1311,11 +1348,14 @@ section {
       float: none; }
       .header .head-menu ul li a {
         padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Roboto-Light", sans-serif;
         border-bottom: 1px solid #fff; }
     .header .cart-wrap {
       width: 50px;
-      top: -361px;
-      right: -63px; }
+      top: -320px;
+      left: 10px; }
   .advantages-wrapper .advantages__row {
     margin: 0; }
   .advantages-wrapper .advantages__item {
@@ -1365,9 +1405,15 @@ section {
         .slider .slider__text .text__body .text__list ul li {
           font-size: 22px; }
       .slider .slider__text .text__body .text__list ul:last-child {
-        margin-left: 10px; }
-  .slide2__img {
-    width: 30% !important; }
+        margin-left: 30px; }
+  .slider .slider__text .slide2__btn1 {
+    margin-top: 220px;
+    width: 50%;
+    float: none; }
+  .slider .slider__text .slide2__btn2 {
+    margin-top: -400px;
+    width: 50%;
+    float: none; }
   .slider .slider__text .text__head {
     text-align: center; }
   .section-head {
@@ -1380,6 +1426,18 @@ section {
   .slider .slider__img {
     width: 50%;
     margin: 30px auto 0px auto; }
+  .slider .slide0-wrap .slider__img {
+    display: none; }
+  .slider .slide0-wrap .text__head h3 {
+    font-size: 35px;
+    line-height: 1.3;
+    text-align: center;
+    padding-top: 50px; }
+  .slider .slide0-wrap .slide2__btn {
+    margin-bottom: 105px;
+    width: 50%; }
+  .slider .slide2-wrap {
+    padding: 120px 0 0 0; }
   .slider .slider__text a {
     margin: 0 auto;
     width: 80%; }
@@ -1394,7 +1452,7 @@ section {
   .store__items .item__hover {
     display: block;
     background: #fff;
-    padding: 0px 15px 15px 15px;
+    padding: 0 15px 15px 15px;
     -webkit-box-shadow: 0 0 13px transparent;
     box-shadow: 0 0 13px transparent;
     position: relative;
@@ -1410,7 +1468,24 @@ section {
   .footer__phones h4 {
     line-height: 32px; }
   .footer-wrapper .footer__social ul li a {
-    margin-right: 45px; } }
+    margin-right: 45px; }
+  .howwork-wrapper .h1 {
+    left: 30px; }
+  .howwork-wrapper .h3 {
+    right: 15px; }
+  .howwork-wrapper .hl2 {
+    right: 74px; }
+  .contacts .contacts__map h4 {
+    display: block;
+    font-size: 25px;
+    text-align: center; }
+  .contacts .contacts__map ul {
+    font-size: 22px;
+    text-align: center; }
+  .contacts .contacts__streetview {
+    margin-top: 30px; }
+    .contacts .contacts__streetview img {
+      width: 100%; } }
 
 @media screen and (max-width: 600px) {
   .slider, .slider .owl-item {
