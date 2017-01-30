@@ -493,7 +493,7 @@ section {
 
 .master-wrapper {
   padding: 50px 0 100px 0;
-  background: #646464 url("../images/master.jpg") center no-repeat;
+  background: #707070 url("../images/master.jpg") center no-repeat;
   background-size: cover;
   color: #fff; }
   .master-wrapper h2 {
@@ -1147,7 +1147,24 @@ section {
 
 @media (min-width: 993px) and (max-width: 1200px) {
   .slider {
-    height: 490px !important; } }
+    height: 490px !important; }
+  .slider .slider__text .text__h h2 {
+    font-size: 39px; }
+  .slider .slide2-wrap {
+    padding: 90px 0; }
+  .slider .slider__text .text__head {
+    margin-top: 80px; }
+  .slider .slider__text .slide2__btn {
+    margin-bottom: 0px;
+    margin-top: 15px; }
+  .slider .slider__text h3 {
+    font-size: 30px;
+    line-height: 1.1; }
+  .slider .slider__text .slide2__btn1,
+  .slider .slider__text .slide2__btn2 {
+    margin-top: 325px; }
+  .header .header__callback span {
+    font-size: 17px; } }
 
 @media screen and (max-width: 1200px) {
   .slider .slider__text h2 {
@@ -1441,6 +1458,9 @@ section {
   .slider .slider__text a {
     margin: 0 auto;
     width: 80%; }
+  .service .left.tabhead h3,
+  .service .right.tabhead h3 {
+    text-align: center; }
   .delivery-wrapper .delivery__item {
     margin-bottom: 50px; }
   .store__items {
@@ -1494,6 +1514,10 @@ section {
     margin-top: -60px !important; }
   .slider1__img img {
     margin-top: 38px; }
+  .slider .slide0-wrap .text__head h3 {
+    padding-top: 30px; }
+  .slider .slide0-wrap .slide2__btn {
+    margin-bottom: 80px; }
   .tab-content__left {
     width: 100%; }
     .tab-content__left img {
@@ -1507,7 +1531,36 @@ section {
   .contacts .contacts__form-wrap {
     margin: 20px 0; }
   .owl-theme .owl-controls {
-    margin-top: -60px !important; } }
+    margin-top: -60px !important; }
+  .tab-content1 .tab-content__left .table,
+  .tab-content1 .tab-content__right .table,
+  .tab-content2 .tab-content__left .table,
+  .tab-content2 .tab-content__right .table {
+    width: 100%; }
+  .tab-content1 .tab-content__left .table table,
+  .tab-content1 .tab-content__right .table table,
+  .tab-content2 .tab-content__left .table table,
+  .tab-content2 .tab-content__right .table table {
+    width: 100%; }
+    .tab-content1 .tab-content__left .table table tr td:last-child,
+    .tab-content1 .tab-content__right .table table tr td:last-child,
+    .tab-content2 .tab-content__left .table table tr td:last-child,
+    .tab-content2 .tab-content__right .table table tr td:last-child {
+      text-align: right; }
+  .howwork-wrapper .h1 {
+    left: 0; }
+  .howwork-wrapper .h2 {
+    left: 180px; }
+  .howwork-wrapper .h2 {
+    left: 195px; }
+  .howwork-wrapper .hl1 {
+    top: 85px;
+    left: 150px; }
+  .howwork-wrapper .hl2 {
+    left: 310px; }
+  .header .cart-wrap {
+    width: 50px;
+    top: -381px; } }
 
 @media screen and (max-width: 450px) {
   .slider .slider1__img {
@@ -1533,9 +1586,34 @@ section {
   .master-wrapper .first-ul {
     float: none; }
   .footer-wrapper .footer__social ul li a {
-    margin-right: 25px; } }
+    margin-right: 25px; }
+  #howwork {
+    display: none; }
+  .master-wrapper {
+    background: #707070; } }
 
 @media screen and (max-width: 350px) {
+  .hide-phone-350 {
+    display: none !important; }
+  .slider .slide2-wrap {
+    padding: 100px 0 0 0; }
+  .slider .slider__text .text__h .fifth {
+    margin-bottom: 5px; }
+  .slider .slide0-wrap .text__head h3 {
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 30px; }
+  .slider .slider__text .text__h h2 {
+    display: block;
+    margin: -7px 0; }
+  .slider .slide0-wrap .slide2__btn {
+    margin-top: 50px;
+    margin-bottom: 123px;
+    width: 100%; }
+  .slider .slider__text .slide2__btn1,
+  .slider .slider__text .slide2__btn2 {
+    width: 100%;
+    margin-bottom: 20px; }
   .slider .owl-controls {
     margin-top: -52px !important; }
   .owl-theme .owl-controls .owl-page span {
@@ -1544,7 +1622,11 @@ section {
   .slider, .slider .owl-item {
     height: 510px !important; }
   .slider .slide2__img {
-    display: none; }
+    width: 100%;
+    margin: 10px auto; }
+    .slider .slide2__img a {
+      width: 95%;
+      margin: 0 auto 58px auto; }
   .slider .slider1__img {
     margin-top: 22px; }
   .slider .slider__text h2 {
@@ -1564,4 +1646,6 @@ section {
     text-transform: uppercase; }
   .tab-content1 .tab-content__left table td, .tab-content1 .tab-content__right table td, .tab-content2 .tab-content__left table td, .tab-content2 .tab-content__right table td {
     font-size: 13px;
-    line-height: 25px; } }
+    line-height: 25px; }
+  .contacts .contacts__map ul {
+    text-align: left; } }
