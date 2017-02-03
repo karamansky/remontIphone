@@ -146,7 +146,7 @@ section {
     .header .logo a {
       margin-top: 4px;
       display: block;
-      width: 50px;
+      width: 83px;
       height: 50px;
       background: url(../images/logo.png) left no-repeat;
       background-size: cover;
@@ -347,10 +347,13 @@ section {
     background-size: cover;
     padding: 120px 0; }
   .slider .slide3-wrap {
-    background: #fff url(../images/slide3-img.png) center 100px no-repeat;
-    background-size: 90%; }
+    background: url(../images/slide3.jpg) center no-repeat;
+    background-size: cover;
+    padding: 120px 0; }
     .slider .slide3-wrap .slider__text {
-      height: 600px; }
+      margin-bottom: 35px; }
+    .slider .slide3-wrap .slide2__img {
+      margin-left: 70px; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
