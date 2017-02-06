@@ -3,6 +3,9 @@
 $(function(){
 
 	$(document).ready(function(){
+
+		$("#vk_comments").css("width", "100%");
+
 		if(getCookie("videopopup") != undefined){
 			$(".videopopup").css("display","none");
 		}
@@ -316,7 +319,7 @@ $(function(){
 		$('.owl-carousel').owlCarousel({
 			singleItem 				: true,
 			itemClass					: ".item-owl",
-			// autoPlay					: 8000,
+			autoPlay					: 8000,
 			pagination				: true,
 			paginationSpeed 	: 5000,
 			rewindSpeed 			: 1000,
@@ -392,11 +395,11 @@ $(function(){
 				type			: 'post',
 				beforeSend: function(){
 					/*отключаем кнопку, чтобы небыло лишних нажатий*/
-					$('#'+ id +' input[type="submit"]').attr('disabled', 'disabled');
+					$("input[type='submit']").attr('disabled', 'disabled');
 				},
 				success		: function(){
 					/*затираем введенные данные в полях ввода, чтобы показать, что форма обработана*/
-					$('#'+ id +' input', '#'+ id + ' textarea').val('');
+					$("#" + id +" input[type=text]", "#" + id +" input[type=email]").val("");
 					/*закрываем popup-окно*/
 					$.magnificPopup.close();
 					/*Показвем сообщение об успешном завершении*/
@@ -405,12 +408,13 @@ $(function(){
 				error			: function(){
 					/*закрываем popup-окно*/
 					$.magnificPopup.close();
+					$("#" + id +" input[type=text]", "#" + id +" input[type=email]").val("");
 					/*Показвем сообщение об неудачном завершении*/
 					$(".error").fadeIn().delay(3000).fadeOut();
 				},
 				complete	: function(){
 					/*Включаем кнопку*/
-					$('#'+ id +' input[type="submit"]').removeAttr("disabled");
+					$('input[type="submit"]').removeAttr("disabled");
 				}
 			});
 		});
@@ -419,7 +423,6 @@ $(function(){
 		$(document).ready(function($){
 			$("input[name='phone']").mask("+7 (999) 999-99-99");
 		});
-
 
 
 //==========EoF==============

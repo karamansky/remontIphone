@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="keywords" content="">
+  <meta name="keywords" content="AppleYou.ru">
   <meta name="description" content="">
   <meta name="author" content="Karamanskyi Stas">
   <meta name="robots" content="index, follow">
@@ -11,9 +11,9 @@
   <!-- init viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Icon For Apple Devices -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon.png">
-  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-144.jpg">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72.jpg">
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-144.jpg">
 
   <!-- head stylesheets -->
   <style type="text/css">
@@ -27,12 +27,24 @@
   <link rel="stylesheet" href="css/libs.css">
   <link rel="stylesheet" href="css/animate.css">
 
-  <title> </title>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91419085-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+
+  <title>Корзина | AppleYou.ru</title>
 </head>
 <body id="to-top" data-spy="scroll" data-target=".navigation" data-offset="50">
 
 
-<div class="header-wrap" style="background: #000;">
+<div class="header-wrap">
   <div class="container-fluid no-padding">
     <div class="header">
       <div id="open-menu">
@@ -40,29 +52,31 @@
         <span></span><span></span>
         <span></span><span></span>
       </div><!-- open-menu -->
+      <!--<span class="cart-wrap__count">3</span>-->
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-md-2 col-sm-2">
+          <div class="col-lg-1 col-md-1 col-sm-1">
             <div class="logo">
               <a href="#to-top"></a>
             </div><!-- logo -->
           </div>
-          <div class="col-lg-7 col-md-6 col-sm-12">
+          <div class="col-lg-8 col-md-8 col-sm-12">
             <div class="head-menu">
               <ul>
-                <li><a href="#reviews">Отзывы</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-                <li><a href="#delivery">Доставка</a></li>
-                <li><a href="#store">Магазин</a></li>
-                <li><a href="#service">Сервис</a></li>
+                <li><a href="../#reviews">Отзывы</a></li>
+                <li><a href="../#contacts">Контакты</a></li>
+                <li><a href="store.html">Магазин</a></li>
+                <li><a href="../#service">Сервис</a></li>
+                <li><a href="https://vk.com/ozstore" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li><a href="https://www.instagram.com/ozstores/" target="_blank"><i class="fa fa-instagram"></i></a></li>
               </ul>
             </div><!-- head-menu -->
           </div>
-          <div class="col-lg-2 col-md-3">
+          <div class="col-lg-3 col-md-3">
             <div class="header__callback">
               <ul>
-                <li><span><i class="fa fa-volume-control-phone"></i>&nbsp;<i class="fa fa-whatsapp"></i>&nbsp;<i class="fa fa-telegram"></i>&nbsp;&nbsp;8 900 2781101</span></li>
-                <li><a href="#callback" class="popup callback-btn">Заказать звонок</a></li>
+                <li><span><i class="fa fa-volume-control-phone"></i>&nbsp;<i class="fa fa-whatsapp"></i>&nbsp;<i class="fa fa-telegram"></i>&nbsp;&nbsp;8 900 278 11 01</span></li>
+                <!--<li><a href="#callback" class="popup callback-btn">Заказать звонок</a></li>-->
               </ul>
             </div>
           </div>
@@ -176,8 +190,8 @@
 
 
 <div class="footer-wrapper">
-  <div class="container">
-    <div class="footer">
+  <div class="footer">
+    <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <div class="footer__logo">
@@ -201,7 +215,7 @@
           </div>
           <div class="col-sm-4">
             <div class="phones__item">
-              <h4>info@myurl.com</h4>
+              <h4>service@appleyou.ru</h4>
             </div>
           </div>
         </div><!-- footer__phones -->
@@ -270,6 +284,24 @@
 <script src="js/libs.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/common.js"></script>
+
+<!-- Код тега ремаркетинга Google -->
+<!--------------------------------------------------
+С помощью тега ремаркетинга запрещается собирать информацию, по которой можно идентифицировать личность пользователя. Также запрещается размещать тег на страницах с контентом деликатного характера. Подробнее об этих требованиях и о настройке тега читайте на странице http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
+<script type="text/javascript">
+  /* <![CDATA[ */
+  var google_conversion_id = 863367975;
+  var google_custom_params = window.google_tag_params;
+  var google_remarketing_only = true;
+  /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">  </script>
+<noscript>
+  <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/863367975/?guid=ON&amp;script=0"/>
+  </div>
+</noscript>
 
 </body>
 </html>

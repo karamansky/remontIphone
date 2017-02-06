@@ -66,7 +66,7 @@ section {
   clear: both; }
 
 .header {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.65);
   position: relative;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -282,7 +282,7 @@ section {
       padding: 12px 25px;
       line-height: 1;
       margin: 5px 0;
-      font-size: 55px; }
+      font-size: 48px; }
     .slider .slider__text .text__h .first {
       background: #606060; }
     .slider .slider__text .text__h .secont {
@@ -349,7 +349,7 @@ section {
   .slider .slide3-wrap {
     background: url(../images/slide3.jpg) center no-repeat;
     background-size: cover;
-    padding: 120px 0; }
+    padding: 120px 0 150px 0; }
     .slider .slide3-wrap .slider__text {
       margin-bottom: 35px; }
     .slider .slide3-wrap .slide2__img {
