@@ -4,7 +4,7 @@
 
 
 .owl-theme .owl-controls
-	margin-top: -55px!important
+	margin-top: -35px!important
 
 .owl-theme .owl-controls .owl-page span
 	width: 20px!important
@@ -39,7 +39,8 @@
 		color: #fff
 		text-transform: uppercase
 
-.success
+.success,
+.to_cart_success
 	display: none
 	width: 100%
 	height: 130px
@@ -53,7 +54,8 @@
 	h3
 		font-family: $light, sans-serif!important
 
-.error
+.error,
+.to_cart_error
 	display: none
 	width: 100%
 	height: 130px
@@ -64,8 +66,14 @@
 	position: fixed
 	top: 0
 	z-index: 99999
-	h3
-		font-family: $light, sans-serif!important
+	
+.to_cart_success
+	height: 70px
+	padding: 20px
+
+.to_cart_error
+	height: 70px
+	padding: 20px
 
 .items-wrapper
 	margin-top: 50px
@@ -86,6 +94,7 @@
 
 	.store__item
 		height: 375px
+		margin-bottom: 30px
 		padding: 5px 15px 15px 15px
 		box-shadow: 0 0 10px rgba(0,0,0,0.2)
 		position: relative
@@ -108,7 +117,8 @@
 		left: 0
 		z-index: 10
 
-	.onStock
+	.onStock,
+	.outStock
 		color: $green-color
 		font-family: $medium
 		margin-top: 5px
@@ -120,6 +130,12 @@
 			background: $green-color
 			border-radius: 50%
 			margin-right: 5px
+			
+	.outStock
+		color: #ff0000
+		&:before
+			background: #ff0000
+	
 
 	.sItem__img
 		height: 235px
@@ -188,7 +204,7 @@
 .btn-5 span  
 	display: inline-block 
 	width: 100% 
-	height: 100% 
+	//height: 100% 
 	-webkit-transition: all 0.3s 
 	-webkit-backface-visibility: hidden 
 	-moz-transition: all 0.3s 
@@ -422,6 +438,7 @@
 		line-height: 22px
 
 .cb-form
+	margin-top: 20px
 	input[type=text]
 		border: none
 		width: 285px
@@ -442,17 +459,36 @@
 		font-size: 16px
 
 	input[type=submit]
+		//border: none
+		//background: $viber-color
+		//color: #fff
+		//font-family: $thin
+		//font-size: 16px
+		//display: inline-block
+		//padding: 7px 12px
+		//margin-left: -3px
+		//text-transform: uppercase
+		//&:hover
+		//	background: $blue-color
+
+		border-radius: 5px
 		border: none
-		background: $viber-color
+		padding: 5px 15px
+		font-size: 20px
+		text-decoration: none
+		margin-top: 0px
 		color: #fff
-		font-family: $thin
-		font-size: 16px
+		position: relative
 		display: inline-block
-		padding: 7px 12px
-		margin-left: -3px
-		text-transform: uppercase
+		min-width: 200px
+		background-color: $viber-color
+		box-shadow: 0px 4px 0px 0px darken($viber-color, 12%)
+		&:active
+			transform: translate(0px, 4px)
+			-webkit-transform: translate(0px, 4px)
+			box-shadow: 0px 1px 0px 0px
 		&:hover
-			background: $blue-color
+			background-color: lighten($viber-color, 9%)
 
 
 .tab-content1, .tab-content2
@@ -535,17 +571,35 @@
 		text-align: center
 
 	.btn
+		//border: none
+		//background: $viber-color
+		//color: #fff
+		//font-family: $thin
+		//font-size: 16px
+		//display: inline-block
+		//padding: 7px 12px
+		//margin-top: 5px
+		//text-transform: uppercase
+		//&:hover
+		//	background: $blue-color
+		border-radius: 5px
 		border: none
-		background: $viber-color
-		color: #fff
-		font-family: $thin
-		font-size: 16px
-		display: inline-block
-		padding: 7px 12px
+		padding: 10px 15px
+		font-size: 20px
+		text-decoration: none
 		margin-top: 5px
-		text-transform: uppercase
+		color: #fff
+		position: relative
+		display: inline-block
+		min-width: 200px
+		background-color: $viber-color
+		box-shadow: 0px 4px 0px 0px darken($viber-color, 12%)
+		&:active
+			transform: translate(0px, 4px)
+			-webkit-transform: translate(0px, 4px)
+			box-shadow: 0px 1px 0px 0px
 		&:hover
-			background: $blue-color
+			background-color: lighten($viber-color, 9%)
 
 	.howwork
 
@@ -836,13 +890,28 @@
 	.footer__phones
 		padding: 160px 0 50px 0
 		overflow: hidden
+
+	.footercallback
+		border-radius: 5px
+		padding: 10px 15px
+		font-size: 20px
+		text-decoration: none
+		margin-top: -7px
+		color: #fff
+		position: relative
+		display: inline-block
+		min-width: 200px
+		background-color: $viber-color
+		box-shadow: 0px 5px 0px 0px darken($viber-color, 12%)
+		&:active
+			transform: translate(0px, 5px)
+			-webkit-transform: translate(0px, 5px)
+			box-shadow: 0px 1px 0px 0px
+		&:hover
+			background-color: lighten($viber-color, 9%)
+
 	.phones__item
 		text-align: center
-		a
-			border-bottom: 1px dashed #fff
-			&:hover
-				border-bottom: none
-				cursor: pointer
 
 		h4
 			margin-bottom: 0px
@@ -919,7 +988,7 @@
 
 //**************cart
 .cart
-	background: $grey-bg-color
+	background: $grey-color
 	padding: 50px 0 100px 0
 	h2
 		font-family: $thin
@@ -927,31 +996,28 @@
 		line-height: 1.2
 		margin-bottom: 50px
 
-	.cart__empty
-		display: none
+	
+	tr
+		background: #fff
+		border-bottom: 1px solid $grey-color
 
-	table
-		tr
-			background: #fff
-			&:nth-child(2n-1)
-				background: darken($grey-bg-color, 5%)
-		th
-			font-family: $bold
-			text-align: left
-			padding: 10px 20px
-			background: darken($grey-bg-color, 10%)
-		td
-			min-width: 100px
-			padding: 10px 15px
-			vertical-align: top
-		td.action
-			text-align: center
-		td:last-child
-			width: 120px
-		img
-			width: 250px
-		h3
-			margin-bottom: 10px
+	th
+		font-family: $bold
+		text-align: left
+		padding: 10px 20px
+		background: darken($grey-bg-color, 10%)
+	td
+		min-width: 110px
+		padding: 10px 15px
+		vertical-align: top
+	td.action
+		text-align: center
+	td:last-child
+		width: 120px
+	img
+		width: 250px
+	h3
+		margin-bottom: 10px
 
 	.cart__description
 		font-size: 11px
@@ -1051,6 +1117,11 @@
 		h4
 			padding: 8px 30px 0 15px
 
+	.cart-popup__table
+		.cart__empty
+			padding: 20px
+		
+		
 	.cart-popup__table
 		overflow: auto
 		a
